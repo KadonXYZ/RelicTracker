@@ -3,7 +3,7 @@
   "name": "RelicTracker",
   "author": "gilbio",
   "description": "A mod that tracks relic usage statistics in Slay the Spire 2.",
-  "version": "v1.23",
+  "version": "v1.24",
   "has_pck": false,
   "has_dll": true,
   "dependencies": [],

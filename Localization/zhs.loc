@@ -36,7 +36,6 @@ IVORY_TILE | 获得了 [blue]{0}[/blue] 点 [gold]能量[/gold]。
 JOSS_PAPER | 额外抽了 [blue]{0}[/blue] 张牌。
 KUNAI | 获得了 [blue]{0}[/blue] 点 [gold]敏捷[/gold]。
 LANTERN | 获得了 [blue]{0}[/blue] 点 [gold]能量[/gold]。
-LANTERN | 获得了 [blue]{0}[/blue] 点 [gold]能量[/gold]。
 MUSIC_BOX | 生成了 [blue]{0}[/blue] 张 [gold]虚无[/gold] 复制品。
 NINJA_SCROLL | 生成了 [blue]{0}[/blue] 张 [gold]刀刃[/gold]。
 NUNCHAKU | 获得了 [blue]{0}[/blue] 点 [gold]能量[/gold]。
@@ -93,7 +92,7 @@ DEMON_TONGUE | 回复了 [blue]{0}[/blue] 点生命值。
 DIVINE_RIGHT | 获得了 [blue]{0}[/blue] 颗 [gold]星辰[/gold]。
 ECTOPLASM | 获得了 [blue]{0}[/blue] 点能量。失去了 [blue]{1}[/blue] [gold]金币[/gold]。
 ETERNAL_FEATHER | 回复了 [blue]{0}[/blue] 点 [gold]生命值[/gold]。
-FAKE _BLOODVIAL | 回复了 [blue]{0}[/blue] 点 [gold]生命值[/gold]。
+FAKE_BLOOD_VIAL | 回复了 [blue]{0}[/blue] 点 [gold]生命值[/gold]。
 FAKE_ANCHOR | 获得了 [blue]{0}[/blue] 点 [gold]护甲[/gold]。
 FAKE_HAPPY_FLOWER | 生成了 [blue]{0}[/blue] 点 [gold]能量[/gold]。
 FAKE_LEES_WAFFLE | 回复了 [blue]{0}[/blue] 点 [gold]生命值[/gold]。
@@ -119,7 +118,7 @@ MEAL_TICKET | 回复了 [blue]{0}[/blue] 点 [gold]生命值[/gold]。
 MEAT_ON_THE_BONE | 回复了 [blue]{0}[/blue] 点 [gold]生命值[/gold]。
 MERCURY_HOURGLASS | 造成了 [blue]{0}[/blue] 点伤害。
 METRONOME | 造成了 [blue]{0}[/blue] 点伤害。
-MINIATURE_CANON | 增加了 [blue]{0}[/blue] 点攻击伤害（包含未打出的）。
+MINIATURE_CANNON | 增加了 [blue]{0}[/blue] 点攻击伤害（包含未打出的）。
 MINI_REGENT | 获得了 [blue]{0}[/blue] 点 [gold]力量[/gold]。
 MOLTEN_EGG | 升级了 [blue]{0}[/blue] 张加入的卡牌。
 TOXIC_EGG | 升级了 [blue]{0}[/blue] 张加入的卡牌。
@@ -179,13 +178,12 @@ VERY_HOT_COCOA | 额外获得了 [blue]{0}[/blue] 点 [gold]能量[/gold]。
 VITRUVIAN_MINION | 受影响卡牌：[blue]{0}[/blue]。额外获得了 [blue]{1}[/blue] 点 [gold]格挡[/gold]。额外造成了 [blue]{2}[/blue] 点 [red]伤害[/red]。
 WHISPERING_EARRING | [red]瓦库[/red] 为你接管了 [blue]{0}[/blue] 次。获得了 [blue]{1}[/blue] 点 [gold]能量[/gold]。[red]瓦库[/red] 打出了 [blue]{2}[/blue] 张牌。
 WING_CHARM | 附魔了 [blue]{0}[/blue] 张牌。
-LASTING_CANDY | [gold]触发次数：[/gold] [blue]{0}[/blue]。 
-FAKE_BLOOD_VIAL | 回复了 [blue]{0}[/blue] 点 [gold]生命值[/gold]。
 BELLOWS | 升级了 [blue]{0}[/blue] 张卡牌。
 ICE_CREAM | 累计获得了 [blue]{0}[/blue] 点 [gold]能量[/gold]。
-BRILLIANT_SCARF | [gold]触发次数：[/gold] [blue]{0}[/blue]。
 FUR_COAT | 使敌人的 [gold]生命值[/gold] 降低了 [blue]{0}[/blue] 点。
 WONGO_CUSTOMER_APPRECIATION_BADGE | 你总共拥有 [blue]{0}[/blue] 点 [gold]Wongo 积分[/gold]！
+BRILLIANT_SCARF | [gold]触发次数：[/gold] [blue]{0}[/blue]。
+LASTING_CANDY | [gold]触发次数：[/gold] [blue]{0}[/blue]。 
 BRIMSTONE | 你获得了 [blue]{0}[/blue] 点 [gold]力量[/gold]。\n敌人获得了 [blue]{1}[/blue] 点 [gold]力量[/gold]。
 DRIFTWOOD | 你重掷了 [blue]{0}[/blue] 次卡牌奖励。
 PAELS_GROWTH | 你已经复制了 [blue]{0}[/blue] 张卡牌。
@@ -196,6 +194,9 @@ FISHING_ROD | 升级了 [blue]{0}[/blue] 张卡牌。
 STONE_HUMIDIFIER | 最大生命值增加 [blue]{0}[/blue]点。
 BEATING_REMNANT | Prevented [blue]{0}[/blue] damage. 
 CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] block.
+DISTINGUISHED_CAPE | Played [blue]{0}[/blue] [gold]Apparitions[/gold].
+SERE_TALON | Played [blue]{0}[/blue] [purple]Wishes[/purple].
 // EXCLUDED RELICS - These relics do not have a label, they will be ignored. I recommend leaving it as is.
 KALEIDOSCOPE |
 SILKEN_TRESS |
@@ -262,7 +263,6 @@ TOY_BOX |
 WAR_PAINT | 
 WHETSTONE | 
 WONGOS_MYSTERY_TICKET | 
-FAKE_MANGO | 
 SILVER_CRUCIBLE | 
 CURSED_PEARL | 
 DINGY_RUG | 
@@ -277,9 +277,12 @@ PHIAL_HOLSTER |
 NEOWS_TALISMAN | 
 HEFTY_TABLET | 
 FAKE_MERCHANTS_RUG |
+FAKE_MANGO | 
 WINGED_BOOTS |
 UNSETTLING_LAMP |
 PAPER_KRANE |
 PAPER_PHROG |
 UNDYING_SIGIL |
 BRONZE_SCALES |
+NEOWS_SACRIFICE |
+DOWSING_ROD |

@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
 
-[HarmonyPatch(typeof(LastingCandy), nameof(LastingCandy.BeforeCombatRewardOffered))]
+[HarmonyPatch(typeof(LastingCandy), nameof(LastingCandy.TryModifyCardRewardOptions))]
 public static class LastingCandyPatch
 {
     private static int _lastCombatID = -1;
@@ -17,7 +17,7 @@ public static class LastingCandyPatch
         return false;
     }
 
-    static void Postfix(LastingCandy __instance, RewardsSet rewards, CombatRoom room)
+    static void Prefix(LastingCandy __instance, RewardsSet rewards, CombatRoom room)
     {
         if (rewards.Player != __instance.Owner)
 		{
@@ -30,6 +30,9 @@ public static class LastingCandyPatch
         if (WillTrigger(__instance) && CombatStartManager.IsNewCombat(ref _lastCombatID))
         {
             RelicStatCache.RecordCustomStat(__instance.Id.Entry, new List<int> { 1 });
+        } else
+        {
+            RelicStatCache.RecordCustomStat(__instance.Id.Entry, new List<int> { 0 });
         }
     }
 }

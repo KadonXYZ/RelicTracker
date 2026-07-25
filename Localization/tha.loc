@@ -37,7 +37,6 @@ IVORY_TILE | Gained [blue]{0}[/blue] [gold]Energy[/gold].
 JOSS_PAPER | Drew [blue]{0}[/blue] additional cards.
 KUNAI | Gained [blue]{0}[/blue] [gold]Dexterity[/gold].
 LANTERN | Gained [blue]{0}[/blue] [gold]Energy[/gold].
-LASTING_CANDY | [gold]Times Triggered:[/gold] [blue]{0}[/blue]
 MUSIC_BOX | Created [blue]{0}[/blue] [gold]Ethereal[/gold] copies.
 NINJA_SCROLL | Created [blue]{0}[/blue] [gold]Shivs[/gold].
 NUNCHAKU | Gained [blue]{0}[/blue] [gold]Energy[/gold].
@@ -94,7 +93,7 @@ DEMON_TONGUE | Healed [blue]{0}[/blue] HP.
 DIVINE_RIGHT | Gained [blue]{0}[/blue] [gold]stars[/gold].
 ECTOPLASM | Gained [blue]{0}[/blue] energy.\nLost [blue]{1}[/blue] [gold]Gold[/gold].
 ETERNAL_FEATHER | Healed [blue]{0}[/blue] [gold]HP[/gold].
-FAKE _BLOODVIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
+FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
 FAKE_ANCHOR | Gained [blue]{0}[/blue] [gold]Armor[/gold].
 FAKE_HAPPY_FLOWER | Generated [blue]{0}[/blue] [gold]energy[/gold].
 FAKE_LEES_WAFFLE | Healed [blue]{0}[/blue] [gold]HP[/gold].
@@ -120,7 +119,7 @@ MEAL_TICKET | Healed [blue]{0}[/blue] [gold]HP[/gold].
 MEAT_ON_THE_BONE | Healed [blue]{0}[/blue] [gold]HP[/gold].
 MERCURY_HOURGLASS | Dealt [blue]{0}[/blue] damage.
 METRONOME | Dealt [blue]{0}[/blue] damage.
-MINIATURE_CANON | Added [blue]{0}[/blue] damage to attacks (including not played).
+MINIATURE_CANNON | Added [blue]{0}[/blue] damage to attacks (including not played).
 MINI_REGENT | Gained [blue]{0}[/blue] [gold]Strength[/gold].
 MOLTEN_EGG | Upgraded [blue]{0}[/blue] cards that were added.
 TOXIC_EGG | Upgraded [blue]{0}[/blue] cards that were added.
@@ -180,12 +179,12 @@ VERY_HOT_COCOA | Gained an additional [blue]{0}[/blue] [gold]energy[/gold].
 VITRUVIAN_MINION | Cards affected: [blue]{0}[/blue]\nGained an additional [blue]{1}[/blue] [gold]Block[/gold].\nDealt [blue]{2}[/blue] extra damage.
 WHISPERING_EARRING | [red]Vakuu[/red] has played [blue]{0}[/blue] times for you.\nGained [blue]{1}[/blue] [gold]energy[/gold].\n[red]Vakuu[/red] has played [blue]{2}[/blue] cards.
 WING_CHARM | Enchanted [blue]{0}[/blue] cards.
-FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
 BELLOWS | Upgraded [blue]{0}[/blue] cards.
 ICE_CREAM | Accumulated [blue]{0}[/blue] [gold]Energy[/gold].
-BRILLIANT_SCARF | [gold]Times Triggered:[/gold] [blue]{0}[/blue].
 FUR_COAT | Reduced enemy health by [blue]{0}[/blue] [gold]HP[/gold].
 WONGO_CUSTOMER_APPRECIATION_BADGE | You have a total of [blue]{0}[blue] Wongo Points!
+BRILLIANT_SCARF | [gold]Times Triggered:[/gold] [blue]{0}[/blue].
+LASTING_CANDY | [gold]Times Triggered:[/gold] [blue]{0}[/blue]
 BRIMSTONE | You gained [blue]{0}[/blue] [gold]Strength[/gold].\nEnemies gained [blue]{1}[/blue] [gold]Strength[/gold].
 DRIFTWOOD | You rerolled [blue]{0}[/blue] card rewards.
 PAELS_GROWTH | You have duplicated [blue]{0}[/blue] cards.
@@ -196,6 +195,9 @@ FISHING_ROD | Upgraded [blue]{0}[/blue] cards.
 STONE_HUMIDIFIER | Increased MaxHP by [blue]{0}[/blue].
 BEATING_REMNANT | Prevented [blue]{0}[/blue] damage. 
 CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] block.
+DISTINGUISHED_CAPE | Played [blue]{0}[/blue] [gold]Apparitions[/gold].
+SERE_TALON | Played [blue]{0}[/blue] [purple]Wishes[/purple].
 // EXCLUDED RELICS - These relics do not have a label, they will be ignored. I recommend leaving it as is.
 KALEIDOSCOPE |
 SILKEN_TRESS |
@@ -262,7 +264,6 @@ TOY_BOX |
 WAR_PAINT | 
 WHETSTONE | 
 WONGOS_MYSTERY_TICKET | 
-FAKE_MANGO | 
 SILVER_CRUCIBLE | 
 CURSED_PEARL | 
 DINGY_RUG | 
@@ -277,9 +278,12 @@ PHIAL_HOLSTER |
 NEOWS_TALISMAN | 
 HEFTY_TABLET | 
 FAKE_MERCHANTS_RUG |
+FAKE_MANGO | 
 WINGED_BOOTS |
 UNSETTLING_LAMP |
 PAPER_KRANE |
 PAPER_PHROG |
 UNDYING_SIGIL |
 BRONZE_SCALES |
+NEOWS_SACRIFICE |
+DOWSING_ROD |

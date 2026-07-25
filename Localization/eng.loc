@@ -118,7 +118,7 @@ MEAL_TICKET | Healed [blue]{0}[/blue] [gold]HP[/gold].
 MEAT_ON_THE_BONE | Healed [blue]{0}[/blue] [gold]HP[/gold].
 MERCURY_HOURGLASS | Dealt [blue]{0}[/blue] damage.
 METRONOME | Dealt [blue]{0}[/blue] damage.
-MINIATURE_CANON | Added [blue]{0}[/blue] damage to attacks (including not played).
+MINIATURE_CANNON | Added [blue]{0}[/blue] damage to attacks (including not played).
 MINI_REGENT | Gained [blue]{0}[/blue] [gold]Strength[/gold].
 MOLTEN_EGG | Upgraded [blue]{0}[/blue] cards that were added.
 TOXIC_EGG | Upgraded [blue]{0}[/blue] cards that were added.
@@ -194,6 +194,9 @@ FISHING_ROD | Upgraded [blue]{0}[/blue] cards.
 STONE_HUMIDIFIER | Increased MaxHP by [blue]{0}[/blue].
 BEATING_REMNANT | Prevented [blue]{0}[/blue] damage. 
 CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] block.
+DISTINGUISHED_CAPE | Played [blue]{0}[/blue] [gold]Apparitions[/gold].
+SERE_TALON | Played [blue]{0}[/blue] [purple]Wishes[/purple].
 // EXCLUDED RELICS - These relics do not have a label, they will be ignored. I recommend leaving it as is.
 KALEIDOSCOPE |
 SILKEN_TRESS |
@@ -281,3 +284,5 @@ PAPER_KRANE |
 PAPER_PHROG |
 UNDYING_SIGIL |
 BRONZE_SCALES |
+NEOWS_SACRIFICE |
+DOWSING_ROD |

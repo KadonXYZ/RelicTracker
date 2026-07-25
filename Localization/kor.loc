@@ -20,7 +20,7 @@ CROSSBOW |	공격 카드를 [blue]{0}[/blue]장 생성했습니다.
 DARKSTONE_PERIAPT |	최대 [gold]체력[/gold]을 [blue]{0}[/blue] 증가시켰습니다.
 DAUGHTER_OF_THE_WIND |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
 DRAGON_FRUIT |	최대 [gold]체력[/gold]을 [blue]{0}[/blue] 증가시켰습니다.
-DREAM_CATCHER	 |카드를 [blue]{0}[/blue]장 추가했습니다.
+DREAM_CATCHER |카드를 [blue]{0}[/blue]장 추가했습니다.
 EMBER_TEA |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
 FORGOTTEN_SOUL |	[orange]피해[/orange]를 [blue]{0}[/blue] 주었습니다.
 FUNERARY_MASK |	[gold]영혼[/gold]을 [blue]{0}[/blue]장 얻었습니다.
@@ -35,16 +35,16 @@ IRON_CLUB |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
 IVORY_TILE |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
 JOSS_PAPER |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
 KUNAI |	[gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
-LANTERN	 |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
+LANTERN |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
 MUSIC_BOX |	[gold]휘발성[/gold] 복사본을 [blue]{0}[/blue]장 생성했습니다.
-NINJA_SCROLL	 |[gold]단도[/gold]를 [blue]{0}[/blue]장 생성했습니다.
-NUNCHAKU	 |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-ODDLY_SMOOTH_STONE	 |[gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
+NINJA_SCROLL |[gold]단도[/gold]를 [blue]{0}[/blue]장 생성했습니다.
+NUNCHAKU |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
+ODDLY_SMOOTH_STONE |[gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
 ORNAMENTAL_FAN |[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-PAELS_FLESH	 |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
+PAELS_FLESH |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
 PANTOGRAPH |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-PENDULUM  |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-PERMAFROST 	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
+PENDULUM |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
+PERMAFROST | Gained [blue]{0}[/blue] [gold]Block[/gold].
 PETRIFIED_TOAD |Procured [blue]{0}[/blue] [gold]Potion-Shaped Rocks[/gold].
 PLANISPHERE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
 RAINBOW_RING |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다. [gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
@@ -53,12 +53,12 @@ RIPPLE_BASIN |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
 RUNIC_CAPACITOR |	Gained [blue]{0}[/blue] [gold]Orb[/gold] slots.
 SAI |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
 SHURIKEN |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-SWORD_OF_JADE |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
+SWORD_OF_JADE |	[gold]발동 횟수:[/gold] [blue]{0}[/blue]
 TUNGSTEN_ROD |	[orange]피해[/orange]로 인한 [gold]체력[/gold]을 [blue]{0}[/blue] 덜 잃었습니다.
 VENERABLE_TEA_SET |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
 VEXING_PUZZLEBOX |	카드를 [blue]{0}[/blue]장 생성했습니다.
 FAKE_VENERABLE_TEA_SET |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-SPARKLING_ROUGE	 |[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다. [gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
+SPARKLING_ROUGE |[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다. [gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
 CENTENNIAL_PUZZLE |	카드를 [blue]{0}[/blue]장 뽑았습니다.
 STONE_CRACKER |	카드를 [blue]{0}[/blue]장 강화했습니다.
 VAJRA |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
@@ -85,21 +85,22 @@ BREAD |	에너지를 [blue]{0}[/blue] 잃었습니다. 에너지를 [blue]{1}[/b
 BURNING_STICKS |	카드를 [blue]{0}[/blue]장 복제했습니다.
 CHARONS_ASHES |	적에게 [orange]피해[/orange]를 [blue]{0}[/blue] 주었습니다.
 CHEMICAL_X |	[blue]X[/blue] 카드의 효과가 [blue]{0}[/blue]만큼 증가했습니다.
-CLOAK_CLASP	 |[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
+CLOAK_CLASP |[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
 CRACKED_CORE |	[gold]전기[/gold]를 [blue]{0}[/blue]번 영창했습니다.
 DELICATE_FROND |	포션을 [blue]{0}[/blue]개 채웠습니다.
 DEMON_TONGUE |	체력을 [blue]{0}[/blue] 회복했습니다.
 DIVINE_RIGHT |	[gold]별[/gold]을 [blue]{0}[/blue] 얻었습니다.
 ECTOPLASM |	에너지를 [blue]{0}[/blue] 얻었습니다.\n[gold]골드[/gold]를 [blue]{1}[/blue] 잃었습니다.
 ETERNAL_FEATHER |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
+FAKE_BLOOD_VIAL | [gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
 FAKE_ANCHOR |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
 FAKE_HAPPY_FLOWER |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
 FAKE_LEES_WAFFLE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-FAKE_ORICHALCUM	 |[gold]방어도[/gold]를 추가로 [blue]{0}[/blue] 얻었습니다.
+FAKE_ORICHALCUM |[gold]방어도[/gold]를 추가로 [blue]{0}[/blue] 얻었습니다.
 FAKE_SNECKO_EYE |	카드의 비용을 [blue]{0}[/blue]만큼 감소시켰습니다. 카드의 비용을 [blue]{1}[/blue]만큼 증가시켰습니다.
 FAKE_STRIKE_DUMMY |	[gold]타격[/gold]의 피해를 [blue]{0}[/blue] 증가시켰습니다.
 FESTIVE_POPPER |	[orange]피해[/orange]를 [blue]{0}[/blue] 주었습니다.
-FIDDLE	 |카드를 [blue]{0}[/blue]장 더 뽑았습니다. 카드를 [blue]{1}[/blue]번 뽑지 못했습니다.
+FIDDLE |카드를 [blue]{0}[/blue]장 더 뽑았습니다. 카드를 [blue]{1}[/blue]번 뽑지 못했습니다.
 FRESNEL_LENS |	[blue]{0}[/blue]장의 카드에 기민함을 인챈트했습니다.
 GAMBLING_CHIP |	카드를 [blue]{0}[/blue]장 버렸습니다.
 HAPPY_FLOWER |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
@@ -117,7 +118,7 @@ MEAL_TICKET |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
 MEAT_ON_THE_BONE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
 MERCURY_HOURGLASS |	피해를 [blue]{0}[/blue] 주었습니다.
 METRONOME |	피해를 [blue]{0}[/blue] 주었습니다.
-MINIATURE_CANON |	공격에 피해를 [blue]{0}[/blue] 추가했습니다 (사용되지 않은것도 포함).
+MINIATURE_CANNON |	공격에 피해를 [blue]{0}[/blue] 추가했습니다 (사용되지 않은것도 포함).
 MINI_REGENT |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
 MOLTEN_EGG |	추가된 카드 [blue]{0}[/blue]장을 강화했습니다.
 TOXIC_EGG |	추가된 카드 [blue]{0}[/blue]장을 강화했습니다.
@@ -162,7 +163,6 @@ SPIKED_GAUNTLETS |	에너지를 [blue]{0}[/blue] 얻었습니다. [gold]파워[/
 STONE_CALENDAR |	피해를 [blue]{0}[/blue] 주었습니다.
 STRIKE_DUMMY |	[gold]타격[/gold]의 피해를 [blue]{0}[/blue] 증가시켰습니다.
 STURDY_CLAMP |	[gold]방어도[/gold]를 [blue]{0}[/blue] 유지했습니다.
-SWORD_OF_JADE |	[gold]발동 횟수:[/gold] [blue]{0}[/blue]
 SYMBIOTIC_VIRUS |	[purple]암흑[/purple]을 [blue]{0}[/blue] [gold]영창[/gold]했습니다.
 THE_ABACUS |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
 THE_BOOT |	[gold]발동 횟수:[/gold] [blue]{0}[/blue]. [gold]증가한[/gold]피해: [blue]{1}[/blue].
@@ -182,7 +182,7 @@ BELLOWS |	카드를 [blue]{0}[/blue]장 강화했습니다.
 ICE_CREAM |	[gold]에너지[/gold]를 [blue]{0}[/blue] 유지했습니다.
 FUR_COAT |	적의 [gold]체력[/gold]을 [blue]{0}[/blue] 만큼 감소시켰습니다.
 WONGO_CUSTOMER_APPRECIATION_BADGE |	당신은 총합 [blue]{0}[blue]의 웡고스 포인트를 갖고 있습니다!
-BRILLIANT_SCARF	 |[gold]발동 횟수:[/gold] [blue]{0}[/blue]
+BRILLIANT_SCARF |[gold]발동 횟수:[/gold] [blue]{0}[/blue]
 LASTING_CANDY |	[gold]발동 횟수:[/gold] [blue]{0}[/blue]
 BRIMSTONE |	당신은 [gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.\n적은 [gold]힘[/gold]을 [blue]{1}[/blue] 얻었습니다.
 DRIFTWOOD |	카드 보상을 [blue]{0}[/blue]번 다시 뽑았습니다.
@@ -190,12 +190,13 @@ PAELS_GROWTH |	카드를 [blue]{0}[/blue]장 복제했습니다.
 PAELS_LEGION |	방어도를 추가로 [blue]{0}[/blue] 얻었습니다.
 PHILOSOPHERS_STONE |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.\n적에게 [gold]힘[/gold]을 [blue]{1}[/blue] 추가로 얻었습니다.
 BING_BONG |	[blue]{0}[/blue]장의 카드를 복제했습니다.
-STONE_HUMIDIFIER |	최대 체력을 [blue]{0}[/blue] 증가시켰습니다.
 FISHING_ROD | 카드를 [blue]{0}[/blue]장 강화했습니다.
-BEATING_REMNANT | 피해를 [blue]{0}[/blue] 막았습니다.
 STONE_HUMIDIFIER | 최대 체력을 [blue]{0}[/blue] 증가시켰습니다.
+BEATING_REMNANT | 피해를 [blue]{0}[/blue] 막았습니다.
 CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
-FAKE_BLOOD_VIAL | [gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] block.
+DISTINGUISHED_CAPE | Played [blue]{0}[/blue] [gold]Apparitions[/gold].
+SERE_TALON | Played [blue]{0}[/blue] [purple]Wishes[/purple].
 // EXCLUDED RELICS - These relics do not have a label, they will be ignored. I recommend leaving it as is.
 KALEIDOSCOPE |
 SILKEN_TRESS |
@@ -262,7 +263,6 @@ TOY_BOX |
 WAR_PAINT | 
 WHETSTONE | 
 WONGOS_MYSTERY_TICKET | 
-FAKE_MANGO | 
 SILVER_CRUCIBLE | 
 CURSED_PEARL | 
 DINGY_RUG | 
@@ -277,9 +277,12 @@ PHIAL_HOLSTER |
 NEOWS_TALISMAN | 
 HEFTY_TABLET | 
 FAKE_MERCHANTS_RUG |
+FAKE_MANGO | 
 WINGED_BOOTS |
 UNSETTLING_LAMP |
 PAPER_KRANE |
 PAPER_PHROG |
 UNDYING_SIGIL |
 BRONZE_SCALES |
+NEOWS_SACRIFICE |
+DOWSING_ROD |

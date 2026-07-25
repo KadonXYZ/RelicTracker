@@ -13,3 +13,4 @@ packages/
 RelicTracker/RelicTracker.zip
 update_loc.py
 update_missing_loc.py
+Localization/sync.py

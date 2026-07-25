@@ -15,6 +15,7 @@ public static class RelicLabelRenamer
         { "EMBER_TEA", 2 },
         { "FUNERARY_MASK", 3 },
         { "GORGET", 4 },
+        {"DIAMOND_DIADEM", 20},
         { "HAND_DRILL", 2 },
         { "HORN_CLEAT", 14 },
         { "NINJA_SCROLL", 3 },
