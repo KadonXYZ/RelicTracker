@@ -2,7 +2,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models.Relics;
 
-[HarmonyPatch(typeof(Fiddle), nameof(Fiddle.ModifyHandDrawLate))]
+[HarmonyPatch(typeof(Fiddle), nameof(Fiddle.ModifyHandDraw))]
 public static class FiddlePatch
 {
     static void Postfix(Fiddle __instance, Player player, decimal count)
@@ -16,18 +16,6 @@ public static class FiddlePatch
         RelicStatCache.RecordCustomStat(
             __instance.Id.Entry,
             new List<int> { __instance.DynamicVars.Cards.IntValue, 0 }
-        );
-    }
-}
-
-[HarmonyPatch(typeof(Fiddle), nameof(Fiddle.AfterPreventingDraw))]
-public static class FiddleReducedDrawPatch
-{
-    static void Postfix(Fiddle __instance)
-    {
-        RelicStatCache.RecordCustomStat(
-            __instance.Id.Entry,
-            new List<int> { 0, 1 }
         );
     }
 }

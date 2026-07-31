@@ -20,7 +20,7 @@ public static class ParryingShieldPatch
             && !((decimal)__instance.Owner.Creature.Block < __instance.DynamicVars.Block.BaseValue)
         )
         {
-            int numCreatures = __instance.Owner.RunState.Rng.CombatTargets.Counter;
+            int numCreatures = participants.Count();
             if (numCreatures != 0)
             {
                 RelicStatCache.RecordCustomStat(
