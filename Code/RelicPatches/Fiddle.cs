@@ -2,7 +2,7 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models.Relics;
 
-[HarmonyPatch(typeof(Fiddle), nameof(Fiddle.ModifyHandDrawLate))]
+[HarmonyPatch(typeof(Fiddle), nameof(Fiddle.ModifyHandDraw))]
 public static class FiddlePatch
 {
     static void Postfix(Fiddle __instance, Player player, decimal count)

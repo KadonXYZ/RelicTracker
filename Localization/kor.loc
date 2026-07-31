@@ -197,6 +197,9 @@ CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
 DIAMOND_DIADEM | Gained [blue]{0}[/blue] block.
 DISTINGUISHED_CAPE | Played [blue]{0}[/blue] [gold]Apparitions[/gold].
 SERE_TALON | Played [blue]{0}[/blue] [purple]Wishes[/purple].
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+PAELS_HORN | Played [blue]{0}[/blue] [gold]Relax[/gold] cards.
+TANXS_WHISTLE | Played [gold]Whistle[/gold] [blue]{0}[/blue] times.
 // EXCLUDED RELICS - These relics do not have a label, they will be ignored. I recommend leaving it as is.
 KALEIDOSCOPE |
 SILKEN_TRESS |
@@ -241,7 +244,6 @@ NUTRITIOUS_SOUP |
 OLD_COIN | 
 ORRERY | 
 PAELS_CLAW | 
-PAELS_HORN | 
 PAELS_TOOTH | 
 PEAR | 
 POMANDER | 
@@ -257,7 +259,6 @@ SEA_GLASS |
 SIGNET_RING | 
 SMALL_CAPSULE | 
 SWORD_OF_STONE | 
-TANXS_WHISTLE | 
 TOUCH_OF_OROBAS | 
 TOY_BOX | 
 WAR_PAINT | 

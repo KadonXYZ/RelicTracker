@@ -1,7 +1,10 @@
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
+using MegaCrit.Sts2.Core.Runs;
 
 [HarmonyPatch(typeof(LastingCandy), nameof(LastingCandy.TryModifyCardRewardOptions))]
 public static class LastingCandyPatch
@@ -17,17 +20,29 @@ public static class LastingCandyPatch
         return false;
     }
 
-    static void Prefix(LastingCandy __instance, RewardsSet rewards, CombatRoom room)
+    static void Prefix(LastingCandy __instance, Player player, List<CardCreationResult> rewardOptions, CardCreationOptions creationOptions)
     {
-        if (rewards.Player != __instance.Owner)
+       if (__instance.Owner != player)
 		{
 			return;
 		}
-        if (rewards.Rewards.All((Reward r) => !(r is CardReward)))
+		if (creationOptions.Source != CardCreationSource.Encounter)
 		{
 			return;
 		}
-        if (WillTrigger(__instance) && CombatStartManager.IsNewCombat(ref _lastCombatID))
+		if (!WillTrigger(__instance))
+		{
+			return;
+		}
+		if (!creationOptions.Flags.HasFlag(CardCreationFlags.IsCardReward))
+		{
+			return;
+		}
+		if (!creationOptions.Flags.HasFlag(CardCreationFlags.IsFromCombat))
+		{
+			return;
+		}
+        if ( CombatStartManager.IsNewCombat(ref _lastCombatID))
         {
             RelicStatCache.RecordCustomStat(__instance.Id.Entry, new List<int> { 1 });
         } else
