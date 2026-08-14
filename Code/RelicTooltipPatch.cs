@@ -117,9 +117,8 @@ public static class RelicTooltipPatch
                 }
                 else
                 {
-                    string defaultLabel = LocalizationHelper.GetLocalizedDefault(triggerCount);
                     // No alternate label. Just show the raw trigger count.
-                    // Fallback trigger template
+                    string defaultLabel = LocalizationHelper.GetLocalizedDefault(triggerCount);
                     newDescription = __result.Description + $"\n\n[red][Relic Tracker][/red]\n" + defaultLabel;
                 }
             }

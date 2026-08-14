@@ -1,4 +1,4 @@
-//This is the KOREAN localization file. It contains the labels for each of the relics.
+﻿//This is the KOREAN localization file. It contains the labels for each of the relics.
 //Replace the entries after the vertical bar '|', missing entries will be reverted back to ENGLISH
 
 //Lines starting with a double forward slash '//' are ignored, use it at will.
@@ -90,6 +90,7 @@ CRACKED_CORE |	[gold]전기[/gold]를 [blue]{0}[/blue]번 영창했습니다.
 DELICATE_FROND |	포션을 [blue]{0}[/blue]개 채웠습니다.
 DEMON_TONGUE |	체력을 [blue]{0}[/blue] 회복했습니다.
 DIVINE_RIGHT |	[gold]별[/gold]을 [blue]{0}[/blue] 얻었습니다.
+DIVINE_DESTINY |	[gold]별[/gold]을 [blue]{0}[/blue] 얻었습니다.
 ECTOPLASM |	에너지를 [blue]{0}[/blue] 얻었습니다.\n[gold]골드[/gold]를 [blue]{1}[/blue] 잃었습니다.
 ETERNAL_FEATHER |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
 FAKE_ANCHOR |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
@@ -117,7 +118,7 @@ MEAL_TICKET |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
 MEAT_ON_THE_BONE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
 MERCURY_HOURGLASS |	피해를 [blue]{0}[/blue] 주었습니다.
 METRONOME |	피해를 [blue]{0}[/blue] 주었습니다.
-MINIATURE_CANON |	공격에 피해를 [blue]{0}[/blue] 추가했습니다 (사용되지 않은것도 포함).
+MINIATURE_CANNON |	공격에 피해를 [blue]{0}[/blue] 추가했습니다 (사용되지 않은것도 포함).
 MINI_REGENT |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
 MOLTEN_EGG |	추가된 카드 [blue]{0}[/blue]장을 강화했습니다.
 TOXIC_EGG |	추가된 카드 [blue]{0}[/blue]장을 강화했습니다.
@@ -134,7 +135,7 @@ PAELS_WING |	유물을 [blue]{0}[/blue]개 얻었습니다.
 PANDORAS_BOX |	카드를 [blue]{0}[/blue]장 변화시켰습니다.
 PARRYING_SHIELD |	피해를 [blue]{0}[/blue] 주었습니다.
 PEN_NIB |	[blue]{0}[/blue]번 발동했습니다. 전체 피해를 [blue]{1}[/blue] 증가시켜습니다.
-PHILACTERY_UNBOUND |	[orange]골골이[/orange]를 [blue]{0}[/blue] 소환했습니다.
+PHYLACTERY_UNBOUND |	[orange]골골이[/orange]를 [blue]{0}[/blue] 소환했습니다.
 POCKETWATCH |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
 POLLINOUS_CORE |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
 PRAYER_WHEEL |	카드 보상을 [blue]{0}[/blue] 추가했습니다.
@@ -196,6 +197,12 @@ BEATING_REMNANT | 피해를 [blue]{0}[/blue] 막았습니다.
 STONE_HUMIDIFIER | 최대 체력을 [blue]{0}[/blue] 증가시켰습니다.
 CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
 FAKE_BLOOD_VIAL | [gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
+
+// Missing active entries added by sync script
+PERMAFROST | Gained [blue]{0}[/blue] [gold]Block[/gold].
+DATA_DISK | Gained [blue]{0}[/blue] [gold]Focus[/gold].
+FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
+
 // EXCLUDED RELICS - These relics do not have a label, they will be ignored. I recommend leaving it as is.
 KALEIDOSCOPE |
 SILKEN_TRESS |
@@ -283,3 +290,108 @@ PAPER_KRANE |
 PAPER_PHROG |
 UNDYING_SIGIL |
 BRONZE_SCALES |
+// Missing excluded entries added by sync script
+CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
+
+// Missing active entries added by sync script
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+
+
+// Missing active entries added by sync script
+JEWELED_MASK | Pulled [blue]{0}[/blue] free [gold]Powers[/gold] into your hand.
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+
+
+// Missing active entries added by sync script
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potion rewards.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] orbs.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [green]Poison[/green].
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
+
+// EXCLUDED RELICS - These relics do not have a label, they will be ignored. I recommend leaving it as is.

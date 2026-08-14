@@ -2,16 +2,15 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Rewards;
-using MegaCrit.Sts2.Core.Rooms;
 
-[HarmonyPatch(typeof(WhiteStar), nameof(WhiteStar.TryModifyRewards))]
-public static class WhiteStarPatch
+[HarmonyPatch(typeof(TinyMailbox), nameof(TinyMailbox.TryModifyRestSiteHealRewards))]
+public static class TinyMailboxPatch
 {
     static void Postfix(
-        WhiteStar __instance,
+        TinyMailbox __instance,
         Player player,
         List<Reward> rewards,
-        AbstractRoom? room,
+        bool isMimicked,
         bool __result
     )
     {
@@ -25,7 +24,7 @@ public static class WhiteStarPatch
             return;
         }
 
-        // White Star adds one Boss-tier (Rare) CardReward when it successfully modifies rewards.
-        RelicStatCache.RecordCustomStat(__instance.Id.Entry, new List<int> { 1 });
+        // Tiny Mailbox adds two PotionRewards to the rest-site heal options.
+        RelicStatCache.RecordCustomStat(__instance.Id.Entry, new List<int> { 2 });
     }
 }

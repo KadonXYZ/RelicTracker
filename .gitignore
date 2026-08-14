@@ -7,6 +7,7 @@ bin/
 publish/
 Properties/
 packages/
+_inspect/
 .editorconfig
 *cs.uid
 *.user

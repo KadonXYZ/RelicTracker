@@ -14,6 +14,7 @@ BLACK_BLOOD | Gained [blue]{0}[/blue] [gold]HP[/gold].
 BOOKMARK | Reduced cost of [blue]{0}[/blue] cards.
 BURNING_BLOOD | Gained [blue]{0}[/blue] [gold]HP[/gold].
 CAPTAINS_WHEEL | Gained [blue]{0}[/blue] [gold]Block[/gold].
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
 CHANDELIER | Gained [blue]{0}[/blue] [gold]Energy[/gold].
 CHOICES_PARADOX | Generated [blue]{0}[/blue] cards.
 CROSSBOW | Generated [blue]{0}[/blue] attacks.
@@ -33,6 +34,7 @@ HISTORY_COURSE | Played [blue]{0}[/blue] copies.
 HORN_CLEAT | Gained [blue]{0}[/blue] [gold]Block[/gold].
 IRON_CLUB | Drew [blue]{0}[/blue] additional cards.
 IVORY_TILE | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
 JOSS_PAPER | Drew [blue]{0}[/blue] additional cards.
 KUNAI | Gained [blue]{0}[/blue] [gold]Dexterity[/gold].
 LANTERN | Gained [blue]{0}[/blue] [gold]Energy[/gold].
@@ -87,10 +89,14 @@ CHARONS_ASHES | Dealt [blue]{0}[/blue] damage to enemies.
 CHEMICAL_X | Increased `[blue]X[/blue] value by [blue]{0}[/blue].
 CLOAK_CLASP | Gained [blue]{0}[/blue] [gold]Block[/gold].
 CRACKED_CORE | Channeled [blue]{0}[/blue] [gold]Lightning[/gold].
+DATA_DISK | Gained [blue]{0}[/blue] [gold]Focus[/gold].
 DELICATE_FROND | Generated [blue]{0}[/blue] potions.
 DEMON_TONGUE | Healed [blue]{0}[/blue] HP.
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
 DIVINE_RIGHT | Gained [blue]{0}[/blue] [gold]stars[/gold].
+DIVINE_DESTINY | Gained [blue]{0}[/blue] [gold]stars[/gold].
 ECTOPLASM | Gained [blue]{0}[/blue] energy.\nLost [blue]{1}[/blue] [gold]Gold[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
 ETERNAL_FEATHER | Healed [blue]{0}[/blue] [gold]HP[/gold].
 FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
 FAKE_ANCHOR | Gained [blue]{0}[/blue] [gold]Armor[/gold].
@@ -103,6 +109,7 @@ FESTIVE_POPPER | Dealt [blue]{0}[/blue] damage.
 FIDDLE | Drew [blue]{0}[/blue] additional cards.\nPrevented drawing [blue]{1}[/blue] times.
 FRESNEL_LENS | Enchanted [blue]{0}[/blue] added cards throughout the run.
 GAMBLING_CHIP | Discarded [blue]{0}[/blue] cards.
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
 HAPPY_FLOWER | Generated [blue]{0}[/blue] [gold]energy[/gold].
 INFUSED_CORE | Channeled [blue]{0}[/blue] [gold]Lightning[/gold].
 INTIMIDATING_HELMET | Gained [blue]{0}[/blue] [gold]Block[/gold].
@@ -118,7 +125,7 @@ MEAL_TICKET | Healed [blue]{0}[/blue] [gold]HP[/gold].
 MEAT_ON_THE_BONE | Healed [blue]{0}[/blue] [gold]HP[/gold].
 MERCURY_HOURGLASS | Dealt [blue]{0}[/blue] damage.
 METRONOME | Dealt [blue]{0}[/blue] damage.
-MINIATURE_CANON | Added [blue]{0}[/blue] damage to attacks (including not played).
+MINIATURE_CANNON | Added [blue]{0}[/blue] damage to attacks (including not played).
 MINI_REGENT | Gained [blue]{0}[/blue] [gold]Strength[/gold].
 MOLTEN_EGG | Upgraded [blue]{0}[/blue] cards that were added.
 TOXIC_EGG | Upgraded [blue]{0}[/blue] cards that were added.
@@ -135,9 +142,10 @@ PAELS_WING | Gained [blue]{0}[/blue] relics.
 PANDORAS_BOX | Transformed [blue]{0}[/blue] cards.
 PARRYING_SHIELD | Dealt [blue]{0}[/blue] damage.
 PEN_NIB | Triggered [blue]{0}[/blue] times.\nIncreased overall damage by [blue]{1}[/blue].
-PHILACTERY_UNBOUND | Summoned [orange]Osty[/orange] [blue]{0}[/blue] times.
+PHYLACTERY_UNBOUND | Summoned [orange]Osty[/orange] [blue]{0}[/blue] times.
 POCKETWATCH | Drew [blue]{0}[/blue] additional cards.
 POLLINOUS_CORE | Drew [blue]{0}[/blue] additional cards.
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
 PRAYER_WHEEL | Added [blue]{0}[/blue] card rewards.
 PRISMATIC_GEM | Added [blue]{0}[/blue] [gold]Energy[/gold].
 PUMPKIN_CANDLE | Added [blue]{0}[/blue] [gold]Energy[/gold].\nRekindled [blue]{1}[/blue] times.
@@ -158,6 +166,7 @@ SELF_FORMING_CLAY | Gained [blue]{0}[/blue] Block.
 SHOVEL | Dug up [blue]{0}[/blue] relics.
 SLING_OF_COURAGE | Gained [blue]{0}[/blue] [gold]Strength[/gold].
 SNECKO_EYE | Drew [blue]{0}[/blue] additional cards.\nReduced card costs by [blue]{1}[/blue].\nIncreased card costs by [blue]{2}[/blue].
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
 SOZU | Added [blue]{0}[/blue] [gold]Energy[/gold].\nLost [blue]{1}[/blue] potions.
 SPIKED_GAUNTLETS | Added [blue]{0}[/blue] [gold]Energy[/gold].\nMade [blue]{1}[/blue] [gold]Power[/gold] cards more expensive.
 STONE_CALENDAR | Dealt [blue]{0}[/blue] damage.
@@ -169,6 +178,9 @@ THE_BOOT | [gold]Times Triggered:[/gold] [blue]{0}[/blue].\nDamage increased: [b
 THE_COURIER | Stock refilled: [blue]{0}[/blue].
 THROWING_AXE | Cards duplicated: [blue]{0}[/blue].
 TINGSHA | Triggered [blue]{0}[/blue] times.\nDealt a total of [blue]{1}[/blue] damage.
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
 TOUGH_BANDAGES | Triggered [blue]{0}[/blue] times.\nAdded a total of [blue]{1}[/blue] [gold]Block[/gold].
 TUNING_FORK | Gained [blue]{0}[/blue] [gold]Block[/gold].
 TWISTED_FUNNEL | Applied [blue]{0}[/blue] [gold]Poison[/gold].
@@ -176,7 +188,10 @@ VAMBRACE | Gained an additional [blue]{0}[/blue] [gold]Block[/gold].
 VELVET_CHOKER | Gained an additional [blue]{0}[/blue] [gold]Energy[/gold].\n[red]Blocked[/red] [blue]{1}[/blue] times.
 VERY_HOT_COCOA | Gained an additional [blue]{0}[/blue] [gold]Energy[/gold].
 VITRUVIAN_MINION | Cards affected: [blue]{0}[/blue]\nGained an additional [blue]{1}[/blue] [gold]Block[/gold].\nDealt [blue]{2}[/blue] extra damage.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
 WHISPERING_EARRING | [red]Vakuu[/red] has played [blue]{0}[/blue] times for you.\nGained [blue]{1}[/blue] [gold]energy[/gold].\n[red]Vakuu[/red] has played [blue]{2}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
 WING_CHARM | Enchanted [blue]{0}[/blue] cards.
 BELLOWS | Upgraded [blue]{0}[/blue] cards.
 ICE_CREAM | Accumulated [blue]{0}[/blue] [gold]Energy[/gold].

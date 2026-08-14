@@ -1,8 +1,8 @@
 {
   "id": "RelicTracker",
   "name": "RelicTracker",
-  "author": "gilbio",
-  "description": "A mod that tracks relic usage statistics in Slay the Spire 2.",
+  "author": "KadonXYZ - forked from gilbio / rmac-silva",
+  "description": "A mod that tracks relic usage statistics in Slay the Spire 2. For the beta version of the game.",
   "version": "v1.23",
   "has_pck": false,
   "has_dll": true,
