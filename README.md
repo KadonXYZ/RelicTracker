@@ -1,4 +1,4 @@
-# RelicTracker
+# RelicTracker -- PUBLIC-BETA VERSION for V.0.111.0 // 14.08.2026
 
 A Slay the Spire 2 mod that tracks relic usage and shows the stats on relic tooltips.
 
