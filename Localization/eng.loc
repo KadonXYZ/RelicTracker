@@ -140,6 +140,7 @@ PAELS_EYE | Triggered [blue]{0}[/blue] times.\n[gold]Exhausted[/gold] [blue]{1}[
 PAELS_TEARS | Gained [blue]{0}[/blue] additional energy.
 PAELS_WING | Gained [blue]{0}[/blue] relics.
 PANDORAS_BOX | Transformed [blue]{0}[/blue] cards.
+PAPER_KRANE | Mitigated [blue]{0}[/blue] damage.
 PAPER_PHROG | Added [blue]{0}[/blue] bonus damage.
 PARRYING_SHIELD | Dealt [blue]{0}[/blue] damage.
 PEN_NIB | Triggered [blue]{0}[/blue] times.\nIncreased overall damage by [blue]{1}[/blue].
@@ -293,6 +294,5 @@ FAKE_MERCHANTS_RUG |
 FAKE_MANGO |
 WINGED_BOOTS | 
 UNSETTLING_LAMP |
-PAPER_KRANE |
 UNDYING_SIGIL |
 BRONZE_SCALES |

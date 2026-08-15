@@ -1,4 +1,4 @@
-﻿//This is the KOREAN localization file. It contains the labels for each of the relics.
+//This is the KOREAN localization file. It contains the labels for each of the relics.
 //Replace the entries after the vertical bar '|', missing entries will be reverted back to ENGLISH
 
 //Lines starting with a double forward slash '//' are ignored, use it at will.
@@ -10,193 +10,193 @@ DEFAULT_TOOLTIP | [gold]Times Triggered:[/gold] [blue]{0}[/blue].
 EMPTY_TOOLTIP | [gold]No data to display...[/gold]
 
 //RELIC PATCHES - Ensure you maintain the same formatting, you must have the same number of {0}, {1}, {2}... 
-BLACK_BLOOD |	[gold]체력[/gold]을 [blue]{0}[/blue] 얻었습니다.
-BOOKMARK |	카드 [blue]{0}[/blue]장의 비용을 감소시켰습니다.
-BURNING_BLOOD |	[gold]체력[/gold]을 [blue]{0}[/blue] 얻었습니다.
-CAPTAINS_WHEEL |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-CHANDELIER |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-CHOICES_PARADOX |	카드를 [blue]{0}[/blue]장 생성했습니다.
-CROSSBOW |	공격 카드를 [blue]{0}[/blue]장 생성했습니다.
-DARKSTONE_PERIAPT |	최대 [gold]체력[/gold]을 [blue]{0}[/blue] 증가시켰습니다.
-DAUGHTER_OF_THE_WIND |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-DRAGON_FRUIT |	최대 [gold]체력[/gold]을 [blue]{0}[/blue] 증가시켰습니다.
-DREAM_CATCHER	 |카드를 [blue]{0}[/blue]장 추가했습니다.
-EMBER_TEA |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-FORGOTTEN_SOUL |	[orange]피해[/orange]를 [blue]{0}[/blue] 주었습니다.
-FUNERARY_MASK |	[gold]영혼[/gold]을 [blue]{0}[/blue]장 얻었습니다.
-GAME_PIECE |	카드를 [blue]{0}[/blue]장 뽑았습니다.
-GORGET |	[gold]판금[/gold]을 [blue]{0}[/blue] 얻었습니다.
-GREMLIN_HORN |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다. 카드를 [blue]{0}[/blue]장 뽑았습니다.
-HAND_DRILL |	[gold]취약[/gold]을 [blue]{0}[/blue] 부여했습니다.
-HELICAL_DART |	[gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
-HISTORY_COURSE |	복사본을 [blue]{0}[/blue]장 사용했습니다.
-HORN_CLEAT |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-IRON_CLUB |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-IVORY_TILE |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-JOSS_PAPER |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-KUNAI |	[gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
-LANTERN	 |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-MUSIC_BOX |	[gold]휘발성[/gold] 복사본을 [blue]{0}[/blue]장 생성했습니다.
-NINJA_SCROLL	 |[gold]단도[/gold]를 [blue]{0}[/blue]장 생성했습니다.
-NUNCHAKU	 |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-ODDLY_SMOOTH_STONE	 |[gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
-ORNAMENTAL_FAN |[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-PAELS_FLESH	 |[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-PANTOGRAPH |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-PENDULUM  |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-PERMAFROST 	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
+BLACK_BLOOD |	[gold]??[/gold]? [blue]{0}[/blue] ?????.
+BOOKMARK |	?? [blue]{0}[/blue]?? ??? ???????.
+BURNING_BLOOD |	[gold]??[/gold]? [blue]{0}[/blue] ?????.
+CAPTAINS_WHEEL |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+CHANDELIER |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+CHOICES_PARADOX |	??? [blue]{0}[/blue]? ??????.
+CROSSBOW |	?? ??? [blue]{0}[/blue]? ??????.
+DARKSTONE_PERIAPT |	?? [gold]??[/gold]? [blue]{0}[/blue] ???????.
+DAUGHTER_OF_THE_WIND |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+DRAGON_FRUIT |	?? [gold]??[/gold]? [blue]{0}[/blue] ???????.
+DREAM_CATCHER	 |??? [blue]{0}[/blue]? ??????.
+EMBER_TEA |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+FORGOTTEN_SOUL |	[orange]??[/orange]? [blue]{0}[/blue] ?????.
+FUNERARY_MASK |	[gold]??[/gold]? [blue]{0}[/blue]? ?????.
+GAME_PIECE |	??? [blue]{0}[/blue]? ?????.
+GORGET |	[gold]??[/gold]? [blue]{0}[/blue] ?????.
+GREMLIN_HORN |	[gold]???[/gold]? [blue]{0}[/blue] ?????. ??? [blue]{0}[/blue]? ?????.
+HAND_DRILL |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+HELICAL_DART |	[gold]??[/gold]? [blue]{0}[/blue] ?????.
+HISTORY_COURSE |	???? [blue]{0}[/blue]? ??????.
+HORN_CLEAT |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+IRON_CLUB |	??? [blue]{0}[/blue]? ? ?????.
+IVORY_TILE |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+JOSS_PAPER |	??? [blue]{0}[/blue]? ? ?????.
+KUNAI |	[gold]??[/gold]? [blue]{0}[/blue] ?????.
+LANTERN	 |[gold]???[/gold]? [blue]{0}[/blue] ?????.
+MUSIC_BOX |	[gold]???[/gold] ???? [blue]{0}[/blue]? ??????.
+NINJA_SCROLL	 |[gold]??[/gold]? [blue]{0}[/blue]? ??????.
+NUNCHAKU	 |[gold]???[/gold]? [blue]{0}[/blue] ?????.
+ODDLY_SMOOTH_STONE	 |[gold]??[/gold]? [blue]{0}[/blue] ?????.
+ORNAMENTAL_FAN |[gold]???[/gold]? [blue]{0}[/blue] ?????.
+PAELS_FLESH	 |[gold]???[/gold]? [blue]{0}[/blue] ?????.
+PANTOGRAPH |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+PENDULUM  |	??? [blue]{0}[/blue]? ? ?????.
+PERMAFROST 	[gold]???[/gold]? [blue]{0}[/blue] ?????.
 PETRIFIED_TOAD |Procured [blue]{0}[/blue] [gold]Potion-Shaped Rocks[/gold].
-PLANISPHERE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-RAINBOW_RING |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다. [gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
-REPTILE_TRINKET |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-RIPPLE_BASIN |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
+PLANISPHERE |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+RAINBOW_RING |	[gold]?[/gold]? [blue]{0}[/blue] ?????. [gold]??[/gold]? [blue]{0}[/blue] ?????.
+REPTILE_TRINKET |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+RIPPLE_BASIN |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
 RUNIC_CAPACITOR |	Gained [blue]{0}[/blue] [gold]Orb[/gold] slots.
-SAI |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-SHURIKEN |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-SWORD_OF_JADE |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-TUNGSTEN_ROD |	[orange]피해[/orange]로 인한 [gold]체력[/gold]을 [blue]{0}[/blue] 덜 잃었습니다.
-VENERABLE_TEA_SET |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-VEXING_PUZZLEBOX |	카드를 [blue]{0}[/blue]장 생성했습니다.
-FAKE_VENERABLE_TEA_SET |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-SPARKLING_ROUGE	 |[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다. [gold]민첩[/gold]을 [blue]{0}[/blue] 얻었습니다.
-CENTENNIAL_PUZZLE |	카드를 [blue]{0}[/blue]장 뽑았습니다.
-STONE_CRACKER |	카드를 [blue]{0}[/blue]장 강화했습니다.
-VAJRA |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-UNCEASING_TOP |	카드를 [blue]{0}[/blue]장 뽑았습니다.
-AKABEKO |	[gold]활력[/gold]을 [blue]{0}[/blue] 획득했습니다.
-AMETHYST_AUBERGINE |	[gold]골드[/gold]를 [blue]{0}[/blue] 획득했습니다.
-ANCHOR |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-ART_OF_WAR |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-BAG_OF_MARBLES |	적 [blue]{0}[/blue] 마리에게 [gold]취약[/gold]을 부여했습니다.
-BAG_OF_PREPARATION |	카드를 [blue]{0}[/blue]장 더 뽑았습니다
-BIG_MUSHROOM |	카드를 [blue]{0}[/blue]장 덜 뽑았습니다
-BIIIG_HUG |	[gold]그을음[/gold]을 [blue]{0}[/blue]장 추가했습니다.
-BLACK_STAR |	[gold]유물[/gold]을 [blue]{0}[/blue]개 얻었습니다.
-BLESSED_ANTLER |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.\n[gold]어지러움[/gold]을 [blue]{1}[/blue]장 섞어 넣었습니다.
-BLOOD_SOAKED_ROSE |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.\n[red]매료됨[/red]에 의해 [blue]{1}[/blue]번 막혔습니다.
-BLOOD_VIAL |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-BONE_FLUTE |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-BOOK_OF_FIVE_RINGS |	[blue]{0}[/blue]번 발동했습니다. [gold]체력[/gold]을 [blue]{1}[/blue] 회복했습니다.
-BOOK_REPAIR_KNIFE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-BOOMING_CONCH |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-BOUND_PHYLACTERY |	[orange]골골이[/orange]를 [blue]{0}[/blue] 소환했습니다.
-BOWLER_HAT |	[gold]골드[/gold]를 추가로 [blue]{0}[/blue] 획득했습니다.
-BREAD |	에너지를 [blue]{0}[/blue] 잃었습니다. 에너지를 [blue]{1}[/blue] 얻었습니다.
-BURNING_STICKS |	카드를 [blue]{0}[/blue]장 복제했습니다.
-CHARONS_ASHES |	적에게 [orange]피해[/orange]를 [blue]{0}[/blue] 주었습니다.
-CHEMICAL_X |	[blue]X[/blue] 카드의 효과가 [blue]{0}[/blue]만큼 증가했습니다.
-CLOAK_CLASP	 |[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-CRACKED_CORE |	[gold]전기[/gold]를 [blue]{0}[/blue]번 영창했습니다.
-DELICATE_FROND |	포션을 [blue]{0}[/blue]개 채웠습니다.
-DEMON_TONGUE |	체력을 [blue]{0}[/blue] 회복했습니다.
-DIVINE_RIGHT |	[gold]별[/gold]을 [blue]{0}[/blue] 얻었습니다.
-DIVINE_DESTINY |	[gold]별[/gold]을 [blue]{0}[/blue] 얻었습니다.
-ECTOPLASM |	에너지를 [blue]{0}[/blue] 얻었습니다.\n[gold]골드[/gold]를 [blue]{1}[/blue] 잃었습니다.
-ETERNAL_FEATHER |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-FAKE_ANCHOR |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-FAKE_HAPPY_FLOWER |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-FAKE_LEES_WAFFLE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-FAKE_ORICHALCUM	 |[gold]방어도[/gold]를 추가로 [blue]{0}[/blue] 얻었습니다.
-FAKE_SNECKO_EYE |	카드의 비용을 [blue]{0}[/blue]만큼 감소시켰습니다. 카드의 비용을 [blue]{1}[/blue]만큼 증가시켰습니다.
-FAKE_STRIKE_DUMMY |	[gold]타격[/gold]의 피해를 [blue]{0}[/blue] 증가시켰습니다.
-FESTIVE_POPPER |	[orange]피해[/orange]를 [blue]{0}[/blue] 주었습니다.
-FIDDLE	 |카드를 [blue]{0}[/blue]장 더 뽑았습니다. 카드를 [blue]{1}[/blue]번 뽑지 못했습니다.
-FRESNEL_LENS |	[blue]{0}[/blue]장의 카드에 기민함을 인챈트했습니다.
-GAMBLING_CHIP |	카드를 [blue]{0}[/blue]장 버렸습니다.
-HAPPY_FLOWER |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-INFUSED_CORE |	[gold]전기[/gold]를 [blue]{0}[/blue]번 영창했습니다.
-INTIMIDATING_HELMET |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-KUSARIGAMA |	피해를 [blue]{0}[/blue] 주었습니다.
-LAVA_LAMP |	[blue]{0}[/blue]장의 카드 보상을 강화했습니다.
-LEES_WAFFLE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-LETTER_OPENER |	피해를 [blue]{0}[/blue] 주었습니다.
-LOST_WISP |	피해를 [blue]{0}[/blue] 주었습니다.
-LUCKY_FYSH |	[gold]골드[/gold]를 [blue]{0}[/blue] 획득했습니다.
-LUNAR_PASTRY |	[gold]별[/gold]을 [blue]{0}[/blue] 얻었습니다.
-MAW_BANK |	[gold]골드[/gold]를 [blue]{0}[/blue] 획득했습니다.
-MEAL_TICKET |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-MEAT_ON_THE_BONE |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-MERCURY_HOURGLASS |	피해를 [blue]{0}[/blue] 주었습니다.
-METRONOME |	피해를 [blue]{0}[/blue] 주었습니다.
-MINIATURE_CANNON |	공격에 피해를 [blue]{0}[/blue] 추가했습니다 (사용되지 않은것도 포함).
-MINI_REGENT |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-MOLTEN_EGG |	추가된 카드 [blue]{0}[/blue]장을 강화했습니다.
-TOXIC_EGG |	추가된 카드 [blue]{0}[/blue]장을 강화했습니다.
-FROZEN_EGG |	추가된 카드 [blue]{0}[/blue]장을 강화했습니다.
-MR_STRUGGLES |	피해를 [blue]{0}[/blue] 주었습니다.
-MUMMIFIED_HAND |	[blue]{0}[/blue]번 발동했습니다.\n카드의 비용을 [blue]{1}[/blue] 감소시켰습니다.
-MYSTIC_LIGHTER |	공격에 피해를 [blue]{0}[/blue]만큼 추가했습니다.
-ORANGE_DOUGH |	무색 카드를 [blue]{0}[/blue]장 얻었습니다.
-ORICHALCUM |	[gold]방어도[/gold]를 추가로 [blue]{0}[/blue] 얻었습니다.
-PAELS_BLOOD |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-PAELS_EYE |	[blue]{0}[/blue]번 발동했습니다. 카드를 [blue]{1}[/blue]장 [gold]소멸[/gold]시켰습니다.
-PAELS_TEARS |	에너지를 추가로 [blue]{0}[/blue] 얻었습니다.
-PAELS_WING |	유물을 [blue]{0}[/blue]개 얻었습니다.
-PANDORAS_BOX |	카드를 [blue]{0}[/blue]장 변화시켰습니다.
-PARRYING_SHIELD |	피해를 [blue]{0}[/blue] 주었습니다.
-PEN_NIB |	[blue]{0}[/blue]번 발동했습니다. 전체 피해를 [blue]{1}[/blue] 증가시켜습니다.
-PHYLACTERY_UNBOUND |	[orange]골골이[/orange]를 [blue]{0}[/blue] 소환했습니다.
-POCKETWATCH |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-POLLINOUS_CORE |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-PRAYER_WHEEL |	카드 보상을 [blue]{0}[/blue] 추가했습니다.
-PRISMATIC_GEM |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-PUMPKIN_CANDLE |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.\n[blue]{1}[/blue]번 불을 붙혔습니다.
-RADIANT_PEARL | |	[gold]발광[/gold]을 [blue]{0}[/blue]장 얻었습니다.
-RAZOR_TOOTH |	카드를 [blue]{0}[/blue]장 강화했습니다.
-RED_MASK |	적 [blue]{0}[/blue] 마리에게 [gold]약화[/gold]를 부여했습니다.
-REGALITE |	방어도를 [blue]{0}[/blue] 얻었습니다.
-REGAL_PILLOW |	[gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
-RINGING_TRIANGLE |	카드를 [blue]{0}[/blue]장 보존했습니다.
-RING_OF_THE_DRAKE |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-RING_OF_THE_SNAKE |	카드를 [blue]{0}[/blue]장 더 뽑았습니다.
-ROYAL_POISON |	[red]피해[/red]를 [blue]{0}[/blue] 받았습니다.
-RUINED_HELMET | |	[gold]힘[/gold]을 추가로 [blue]{0}[/blue] 얻었습니다.
-RUNIC_PYRAMID |	카드를 [blue]{0}[/blue]장 보존했습니다.
-SCREAMING_FLAGON |	피해를 [blue]{0}[/blue] 주었습니다.
-SEAL_OF_GOLD |	[gold]골드[/gold]를 [blue]{0}[/blue] 잃었습니다. 에너지를 [blue]{1}[/blue] 얻었습니다.
-SELF_FORMING_CLAY |	방어도를 [blue]{0}[/blue] 얻었습니다.
-SHOVEL |	유물을 [blue]{0}[/blue]개 파냈습니다.
-SLING_OF_COURAGE |	[gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.
-SNECKO_EYE |	카드를 [blue]{0}[/blue]장 더 뽑았습니다. 카드의 비용을 [blue]{1}[/blue]만큼 감소시켰습니다. 카드의 비용을 [blue]{2}[/blue]만큼 증가시켰습니다.
-SOZU |	에너지를 [blue]{0}[/blue] 얻었습니다. 포션을 [blue]{1}[/blue]개 잃었습니다.
-SPIKED_GAUNTLETS |	에너지를 [blue]{0}[/blue] 얻었습니다. [gold]파워[/gold] 카드 [blue]{1}[/blue]장의  비용을 증가시켰습니다.
-STONE_CALENDAR |	피해를 [blue]{0}[/blue] 주었습니다.
-STRIKE_DUMMY |	[gold]타격[/gold]의 피해를 [blue]{0}[/blue] 증가시켰습니다.
-STURDY_CLAMP |	[gold]방어도[/gold]를 [blue]{0}[/blue] 유지했습니다.
-SWORD_OF_JADE |	[gold]발동 횟수:[/gold] [blue]{0}[/blue]
-SYMBIOTIC_VIRUS |	[purple]암흑[/purple]을 [blue]{0}[/blue] [gold]영창[/gold]했습니다.
-THE_ABACUS |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-THE_BOOT |	[gold]발동 횟수:[/gold] [blue]{0}[/blue]. [gold]증가한[/gold]피해: [blue]{1}[/blue].
-THE_COURIER |	재입고된 품목: [blue]{0}[/blue].
-THROWING_AXE |	복제된 카드: [blue]{0}[/blue].
-TINGSHA |	[blue]{0}[/blue]번 발동했습니다. 피해를 총합 [blue]{1}[/blue] 주었습니다.
-TOUGH_BANDAGES |	[blue]{0}[/blue]번 발동했습니다.  [gold]방어도[/gold]를 총합 [blue]{1}[/blue] 얻었습니다.
-TUNING_FORK |	[gold]방어도[/gold]를 [blue]{0}[/blue] 얻었습니다.
-TWISTED_FUNNEL |	[gold]중독[/gold]을 [blue]{0}[/blue] 부여했습니다.
-VAMBRACE |	[gold]방어도[/gold]를 추가로 [blue]{0}[/blue] 얻었습니다.
-VELVET_CHOKER |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다. [blue]{1}[/blue]번 [red]막혔습니다[/red].
-VERY_HOT_COCOA |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.
-VITRUVIAN_MINION |	[blue]{0}[/blue]장의 카드가 [gold]방어도[/gold]를 추가로 [blue]{1}[/blue] 얻었습니다. [red]피해[/red]를 추가로 [blue]{2}[/blue] 주었습니다.
-WHISPERING_EARRING |	[red]바쿠[/red]가 당신의 턴을 [blue]{0}[/blue]번 대신 플레이했습니다. [gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다. [red]바쿠[/red]가 [blue]{2}[/blue]장의 카드를 플레이했습니다.
-WING_CHARM |	카드 [blue]{0}[/blue]장을 인챈트했습니다.
-BELLOWS |	카드를 [blue]{0}[/blue]장 강화했습니다.
-ICE_CREAM |	[gold]에너지[/gold]를 [blue]{0}[/blue] 유지했습니다.
-FUR_COAT |	적의 [gold]체력[/gold]을 [blue]{0}[/blue] 만큼 감소시켰습니다.
-WONGO_CUSTOMER_APPRECIATION_BADGE |	당신은 총합 [blue]{0}[blue]의 웡고스 포인트를 갖고 있습니다!
-BRILLIANT_SCARF	 |[gold]발동 횟수:[/gold] [blue]{0}[/blue]
-LASTING_CANDY |	[gold]발동 횟수:[/gold] [blue]{0}[/blue]
-BRIMSTONE |	당신은 [gold]힘[/gold]을 [blue]{0}[/blue] 얻었습니다.\n적은 [gold]힘[/gold]을 [blue]{1}[/blue] 얻었습니다.
-DRIFTWOOD |	카드 보상을 [blue]{0}[/blue]번 다시 뽑았습니다.
-PAELS_GROWTH |	카드를 [blue]{0}[/blue]장 복제했습니다.
-PAELS_LEGION |	방어도를 추가로 [blue]{0}[/blue] 얻었습니다.
-PHILOSOPHERS_STONE |	[gold]에너지[/gold]를 [blue]{0}[/blue] 얻었습니다.\n적에게 [gold]힘[/gold]을 [blue]{1}[/blue] 추가로 얻었습니다.
-BING_BONG |	[blue]{0}[/blue]장의 카드를 복제했습니다.
-STONE_HUMIDIFIER |	최대 체력을 [blue]{0}[/blue] 증가시켰습니다.
-FISHING_ROD | 카드를 [blue]{0}[/blue]장 강화했습니다.
-BEATING_REMNANT | 피해를 [blue]{0}[/blue] 막았습니다.
-STONE_HUMIDIFIER | 최대 체력을 [blue]{0}[/blue] 증가시켰습니다.
+SAI |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+SHURIKEN |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+SWORD_OF_JADE |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+TUNGSTEN_ROD |	[orange]??[/orange]? ?? [gold]??[/gold]? [blue]{0}[/blue] ? ?????.
+VENERABLE_TEA_SET |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+VEXING_PUZZLEBOX |	??? [blue]{0}[/blue]? ??????.
+FAKE_VENERABLE_TEA_SET |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+SPARKLING_ROUGE	 |[gold]?[/gold]? [blue]{0}[/blue] ?????. [gold]??[/gold]? [blue]{0}[/blue] ?????.
+CENTENNIAL_PUZZLE |	??? [blue]{0}[/blue]? ?????.
+STONE_CRACKER |	??? [blue]{0}[/blue]? ??????.
+VAJRA |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+UNCEASING_TOP |	??? [blue]{0}[/blue]? ?????.
+AKABEKO |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+AMETHYST_AUBERGINE |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+ANCHOR |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+ART_OF_WAR |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+BAG_OF_MARBLES |	? [blue]{0}[/blue] ???? [gold]??[/gold]? ??????.
+BAG_OF_PREPARATION |	??? [blue]{0}[/blue]? ? ?????
+BIG_MUSHROOM |	??? [blue]{0}[/blue]? ? ?????
+BIIIG_HUG |	[gold]???[/gold]? [blue]{0}[/blue]? ??????.
+BLACK_STAR |	[gold]??[/gold]? [blue]{0}[/blue]? ?????.
+BLESSED_ANTLER |	[gold]???[/gold]? [blue]{0}[/blue] ?????.\n[gold]????[/gold]? [blue]{1}[/blue]? ?? ?????.
+BLOOD_SOAKED_ROSE |	[gold]???[/gold]? [blue]{0}[/blue] ?????.\n[red]???[/red]? ?? [blue]{1}[/blue]? ?????.
+BLOOD_VIAL |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+BONE_FLUTE |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+BOOK_OF_FIVE_RINGS |	[blue]{0}[/blue]? ??????. [gold]??[/gold]? [blue]{1}[/blue] ??????.
+BOOK_REPAIR_KNIFE |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+BOOMING_CONCH |	??? [blue]{0}[/blue]? ? ?????.
+BOUND_PHYLACTERY |	[orange]???[/orange]? [blue]{0}[/blue] ??????.
+BOWLER_HAT |	[gold]??[/gold]? ??? [blue]{0}[/blue] ??????.
+BREAD |	???? [blue]{0}[/blue] ?????. ???? [blue]{1}[/blue] ?????.
+BURNING_STICKS |	??? [blue]{0}[/blue]? ??????.
+CHARONS_ASHES |	??? [orange]??[/orange]? [blue]{0}[/blue] ?????.
+CHEMICAL_X |	[blue]X[/blue] ??? ??? [blue]{0}[/blue]?? ??????.
+CLOAK_CLASP	 |[gold]???[/gold]? [blue]{0}[/blue] ?????.
+CRACKED_CORE |	[gold]??[/gold]? [blue]{0}[/blue]? ??????.
+DELICATE_FROND |	??? [blue]{0}[/blue]? ?????.
+DEMON_TONGUE |	??? [blue]{0}[/blue] ??????.
+DIVINE_RIGHT |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+DIVINE_DESTINY |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+ECTOPLASM |	???? [blue]{0}[/blue] ?????.\n[gold]??[/gold]? [blue]{1}[/blue] ?????.
+ETERNAL_FEATHER |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+FAKE_ANCHOR |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+FAKE_HAPPY_FLOWER |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+FAKE_LEES_WAFFLE |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+FAKE_ORICHALCUM	 |[gold]???[/gold]? ??? [blue]{0}[/blue] ?????.
+FAKE_SNECKO_EYE |	??? ??? [blue]{0}[/blue]?? ???????. ??? ??? [blue]{1}[/blue]?? ???????.
+FAKE_STRIKE_DUMMY |	[gold]??[/gold]? ??? [blue]{0}[/blue] ???????.
+FESTIVE_POPPER |	[orange]??[/orange]? [blue]{0}[/blue] ?????.
+FIDDLE	 |??? [blue]{0}[/blue]? ? ?????. ??? [blue]{1}[/blue]? ?? ?????.
+FRESNEL_LENS |	[blue]{0}[/blue]?? ??? ???? ???????.
+GAMBLING_CHIP |	??? [blue]{0}[/blue]? ?????.
+HAPPY_FLOWER |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+INFUSED_CORE |	[gold]??[/gold]? [blue]{0}[/blue]? ??????.
+INTIMIDATING_HELMET |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+KUSARIGAMA |	??? [blue]{0}[/blue] ?????.
+LAVA_LAMP |	[blue]{0}[/blue]?? ?? ??? ??????.
+LEES_WAFFLE |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+LETTER_OPENER |	??? [blue]{0}[/blue] ?????.
+LOST_WISP |	??? [blue]{0}[/blue] ?????.
+LUCKY_FYSH |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+LUNAR_PASTRY |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+MAW_BANK |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+MEAL_TICKET |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+MEAT_ON_THE_BONE |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+MERCURY_HOURGLASS |	??? [blue]{0}[/blue] ?????.
+METRONOME |	??? [blue]{0}[/blue] ?????.
+MINIATURE_CANNON |	??? ??? [blue]{0}[/blue] ?????? (???? ???? ??).
+MINI_REGENT |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+MOLTEN_EGG |	??? ?? [blue]{0}[/blue]?? ??????.
+TOXIC_EGG |	??? ?? [blue]{0}[/blue]?? ??????.
+FROZEN_EGG |	??? ?? [blue]{0}[/blue]?? ??????.
+MR_STRUGGLES |	??? [blue]{0}[/blue] ?????.
+MUMMIFIED_HAND |	[blue]{0}[/blue]? ??????.\n??? ??? [blue]{1}[/blue] ???????.
+MYSTIC_LIGHTER |	??? ??? [blue]{0}[/blue]?? ??????.
+ORANGE_DOUGH |	?? ??? [blue]{0}[/blue]? ?????.
+ORICHALCUM |	[gold]???[/gold]? ??? [blue]{0}[/blue] ?????.
+PAELS_BLOOD |	??? [blue]{0}[/blue]? ? ?????.
+PAELS_EYE |	[blue]{0}[/blue]? ??????. ??? [blue]{1}[/blue]? [gold]??[/gold]?????.
+PAELS_TEARS |	???? ??? [blue]{0}[/blue] ?????.
+PAELS_WING |	??? [blue]{0}[/blue]? ?????.
+PANDORAS_BOX |	??? [blue]{0}[/blue]? ???????.
+PARRYING_SHIELD |	??? [blue]{0}[/blue] ?????.
+PEN_NIB |	[blue]{0}[/blue]? ??????. ?? ??? [blue]{1}[/blue] ???????.
+PHYLACTERY_UNBOUND |	[orange]???[/orange]? [blue]{0}[/blue] ??????.
+POCKETWATCH |	??? [blue]{0}[/blue]? ? ?????.
+POLLINOUS_CORE |	??? [blue]{0}[/blue]? ? ?????.
+PRAYER_WHEEL |	?? ??? [blue]{0}[/blue] ??????.
+PRISMATIC_GEM |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+PUMPKIN_CANDLE |	[gold]???[/gold]? [blue]{0}[/blue] ?????.\n[blue]{1}[/blue]? ?? ?????.
+RADIANT_PEARL | |	[gold]??[/gold]? [blue]{0}[/blue]? ?????.
+RAZOR_TOOTH |	??? [blue]{0}[/blue]? ??????.
+RED_MASK |	? [blue]{0}[/blue] ???? [gold]??[/gold]? ??????.
+REGALITE |	???? [blue]{0}[/blue] ?????.
+REGAL_PILLOW |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+RINGING_TRIANGLE |	??? [blue]{0}[/blue]? ??????.
+RING_OF_THE_DRAKE |	??? [blue]{0}[/blue]? ? ?????.
+RING_OF_THE_SNAKE |	??? [blue]{0}[/blue]? ? ?????.
+ROYAL_POISON |	[red]??[/red]? [blue]{0}[/blue] ?????.
+RUINED_HELMET | |	[gold]?[/gold]? ??? [blue]{0}[/blue] ?????.
+RUNIC_PYRAMID |	??? [blue]{0}[/blue]? ??????.
+SCREAMING_FLAGON |	??? [blue]{0}[/blue] ?????.
+SEAL_OF_GOLD |	[gold]??[/gold]? [blue]{0}[/blue] ?????. ???? [blue]{1}[/blue] ?????.
+SELF_FORMING_CLAY |	???? [blue]{0}[/blue] ?????.
+SHOVEL |	??? [blue]{0}[/blue]? ?????.
+SLING_OF_COURAGE |	[gold]?[/gold]? [blue]{0}[/blue] ?????.
+SNECKO_EYE |	??? [blue]{0}[/blue]? ? ?????. ??? ??? [blue]{1}[/blue]?? ???????. ??? ??? [blue]{2}[/blue]?? ???????.
+SOZU |	???? [blue]{0}[/blue] ?????. ??? [blue]{1}[/blue]? ?????.
+SPIKED_GAUNTLETS |	???? [blue]{0}[/blue] ?????. [gold]??[/gold] ?? [blue]{1}[/blue]??  ??? ???????.
+STONE_CALENDAR |	??? [blue]{0}[/blue] ?????.
+STRIKE_DUMMY |	[gold]??[/gold]? ??? [blue]{0}[/blue] ???????.
+STURDY_CLAMP |	[gold]???[/gold]? [blue]{0}[/blue] ??????.
+SWORD_OF_JADE |	[gold]?? ??:[/gold] [blue]{0}[/blue]
+SYMBIOTIC_VIRUS |	[purple]??[/purple]? [blue]{0}[/blue] [gold]??[/gold]????.
+THE_ABACUS |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+THE_BOOT |	[gold]?? ??:[/gold] [blue]{0}[/blue]. [gold]???[/gold]??: [blue]{1}[/blue].
+THE_COURIER |	???? ??: [blue]{0}[/blue].
+THROWING_AXE |	??? ??: [blue]{0}[/blue].
+TINGSHA |	[blue]{0}[/blue]? ??????. ??? ?? [blue]{1}[/blue] ?????.
+TOUGH_BANDAGES |	[blue]{0}[/blue]? ??????.  [gold]???[/gold]? ?? [blue]{1}[/blue] ?????.
+TUNING_FORK |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+TWISTED_FUNNEL |	[gold]??[/gold]? [blue]{0}[/blue] ??????.
+VAMBRACE |	[gold]???[/gold]? ??? [blue]{0}[/blue] ?????.
+VELVET_CHOKER |	[gold]???[/gold]? [blue]{0}[/blue] ?????. [blue]{1}[/blue]? [red]?????[/red].
+VERY_HOT_COCOA |	[gold]???[/gold]? [blue]{0}[/blue] ?????.
+VITRUVIAN_MINION |	[blue]{0}[/blue]?? ??? [gold]???[/gold]? ??? [blue]{1}[/blue] ?????. [red]??[/red]? ??? [blue]{2}[/blue] ?????.
+WHISPERING_EARRING |	[red]??[/red]? ??? ?? [blue]{0}[/blue]? ?? ???????. [gold]???[/gold]? [blue]{0}[/blue] ?????. [red]??[/red]? [blue]{2}[/blue]?? ??? ???????.
+WING_CHARM |	?? [blue]{0}[/blue]?? ???????.
+BELLOWS |	??? [blue]{0}[/blue]? ??????.
+ICE_CREAM |	[gold]???[/gold]? [blue]{0}[/blue] ??????.
+FUR_COAT |	?? [gold]??[/gold]? [blue]{0}[/blue] ?? ???????.
+WONGO_CUSTOMER_APPRECIATION_BADGE |	??? ?? [blue]{0}[blue]? ??? ???? ?? ????!
+BRILLIANT_SCARF	 |[gold]?? ??:[/gold] [blue]{0}[/blue]
+LASTING_CANDY |	[gold]?? ??:[/gold] [blue]{0}[/blue]
+BRIMSTONE |	??? [gold]?[/gold]? [blue]{0}[/blue] ?????.\n?? [gold]?[/gold]? [blue]{1}[/blue] ?????.
+DRIFTWOOD |	?? ??? [blue]{0}[/blue]? ?? ?????.
+PAELS_GROWTH |	??? [blue]{0}[/blue]? ??????.
+PAELS_LEGION |	???? ??? [blue]{0}[/blue] ?????.
+PHILOSOPHERS_STONE |	[gold]???[/gold]? [blue]{0}[/blue] ?????.\n??? [gold]?[/gold]? [blue]{1}[/blue] ??? ?????.
+BING_BONG |	[blue]{0}[/blue]?? ??? ??????.
+STONE_HUMIDIFIER |	?? ??? [blue]{0}[/blue] ???????.
+FISHING_ROD | ??? [blue]{0}[/blue]? ??????.
+BEATING_REMNANT | ??? [blue]{0}[/blue] ?????.
+STONE_HUMIDIFIER | ?? ??? [blue]{0}[/blue] ???????.
 CHOSEN_CHEESE | Gained [blue]{0}[/blue] MaxHP.
-FAKE_BLOOD_VIAL | [gold]체력[/gold]을 [blue]{0}[/blue] 회복했습니다.
+FAKE_BLOOD_VIAL | [gold]??[/gold]? [blue]{0}[/blue] ??????.
 
 // Missing active entries added by sync script
 PERMAFROST | Gained [blue]{0}[/blue] [gold]Block[/gold].
@@ -287,7 +287,7 @@ FAKE_MERCHANTS_RUG |
 WINGED_BOOTS |
 UNSETTLING_LAMP |
 PAPER_KRANE |
-PAPER_PHROG |
+PAPER_PHROG | Added [blue]{0}[/blue] bonus damage.
 UNDYING_SIGIL |
 BRONZE_SCALES |
 // Missing excluded entries added by sync script
@@ -385,6 +385,56 @@ JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
 DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
 EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
 GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+PAPER_KRANE | Mitigated [blue]{0}[/blue] damage.
+PAPER_PHROG | Added [blue]{0}[/blue] bonus damage.
 POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
 SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
 TINY_MAILBOX | Generated [blue]{0}[/blue] potions.

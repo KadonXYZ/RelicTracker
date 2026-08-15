@@ -1,4 +1,4 @@
-﻿//This is the JAPANESE localization file. It contains the labels for each of the relics.
+//This is the JAPANESE localization file. It contains the labels for each of the relics.
 //Replace the entries after the vertical bar '|', missing entries will be reverted back to ENGLISH
 
 //Lines starting with a double forward slash '//' are ignored, use it at will.
@@ -279,7 +279,7 @@ FAKE_MERCHANTS_RUG |
 WINGED_BOOTS |
 UNSETTLING_LAMP |
 PAPER_KRANE |
-PAPER_PHROG |
+PAPER_PHROG | Added [blue]{0}[/blue] bonus damage.
 UNDYING_SIGIL |
 BRONZE_SCALES |
 // Missing excluded entries added by sync script
@@ -440,6 +440,68 @@ DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
 EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
 FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
 GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
+STONE_HUMIDIFIER | Increased MaxHP by [blue]{0}[/blue].
+BEATING_REMNANT | Prevented [blue]{0}[/blue] damage. 
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DATA_DISK | Gained [blue]{0}[/blue] [gold]Focus[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
+STONE_HUMIDIFIER | Increased MaxHP by [blue]{0}[/blue].
+BEATING_REMNANT | Prevented [blue]{0}[/blue] damage. 
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DATA_DISK | Gained [blue]{0}[/blue] [gold]Focus[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
+SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
+TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
+TOASTY_MITTENS | Gained [blue]{0}[/blue] [gold]Strength[/gold].
+TOOLBOX | Generated [blue]{0}[/blue] cards.
+WAR_HAMMER | Upgraded [blue]{0}[/blue] cards.
+WHITE_BEAST_STATUE | Dropped [blue]{0}[/blue] potions.
+WHITE_STAR | Shown [blue]{0}[/blue] additional [gold]Rare[/gold] card rewards.
+STONE_HUMIDIFIER | Increased MaxHP by [blue]{0}[/blue].
+BEATING_REMNANT | Prevented [blue]{0}[/blue] damage. 
+
+
+// Missing active entries added by sync script
+CANDELABRA | Gained [blue]{0}[/blue] [gold]Energy[/gold].
+JEWELED_MASK | Pulled [blue]{0}[/blue] [gold]Powers[/gold].
+DATA_DISK | Gained [blue]{0}[/blue] [gold]Focus[/gold].
+DIAMOND_DIADEM | Gained [blue]{0}[/blue] [gold]Block[/gold].
+EMOTION_CHIP | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+FAKE_BLOOD_VIAL | Healed [blue]{0}[/blue] [gold]HP[/gold].
+GOLD_PLATED_CABLES | Triggered [blue]{0}[/blue] [gold]Orbs[/gold].
+PAPER_KRANE | Mitigated [blue]{0}[/blue] damage.
+PAPER_PHROG | Added [blue]{0}[/blue] bonus damage.
 POWER_CELL | Added [blue]{0}[/blue] [gold]0-cost[/gold] cards.
 SNECKO_SKULL | Applied [blue]{0}[/blue] additional [gold]Poison[/gold].
 TINY_MAILBOX | Generated [blue]{0}[/blue] potions.
