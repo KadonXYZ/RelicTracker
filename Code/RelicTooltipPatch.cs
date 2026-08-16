@@ -47,6 +47,11 @@ public static class RelicTooltipPatch
 {
     public static void Postfix(RelicModel __instance, ref HoverTip __result)
     {
+        if (!RelicTracker.RelicTrackerSettings.ShouldShowTooltips)
+        {
+            return;
+        }
+
         if (__instance?.Id == null || string.IsNullOrEmpty(__instance.Id.Entry))
         {
             return;
@@ -125,6 +130,11 @@ public static class RelicTooltipPatch
         }
         else
         {
+            if (!RelicTracker.RelicTrackerSettings.ShowNoDataYet)
+            {
+                return;
+            }
+
             // No data yet. Just add a note about that.
             newDescription = __result.Description + "\n\n[red][Relic Tracker][/red]\n" + LocalizationHelper.GetLocalizedNoDataYet();
         }

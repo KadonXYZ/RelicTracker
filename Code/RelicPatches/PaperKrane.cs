@@ -6,10 +6,6 @@ using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.ValueProps;
 
-/// <summary>
-/// Paper Krane: 0.75 → 0.60 Weak multiplier. Stage on Weak math, commit on real hits
-/// (intents also use CardPreviewMode.None).
-/// </summary>
 [HarmonyPatch(typeof(WeakPower), nameof(WeakPower.ModifyDamageMultiplicative))]
 public static class PaperKranePatch
 {

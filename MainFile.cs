@@ -1,4 +1,5 @@
 using HarmonyLib;
+using Godot;
 using MegaCrit.Sts2.Core.Modding;
 
 namespace RelicTracker;
@@ -12,12 +13,27 @@ public partial class MainFile
 
     public static void Initialize()
     {
+        ModLog.Init();
+        RelicTrackerSettings.Load();
+
         Harmony harmony = new(ModId);
 
         harmony.PatchAll();
         RelicStatCache.CleanupOldHistory();
 
-        ModLog.Init();
+        Callable.From(TryRegisterBaseLibConfig).CallDeferred();
         ModLog.Info("RelicTracker initialized successfully!");
+    }
+
+    private static void TryRegisterBaseLibConfig()
+    {
+        try
+        {
+            BaseLibConfigRegistration.Register();
+        }
+        catch (Exception ex)
+        {
+            ModLog.Warning($"BaseLib config not registered (RelicTracker still runs without it): {ex.Message}");
+        }
     }
 }

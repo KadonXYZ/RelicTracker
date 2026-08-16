@@ -40,6 +40,11 @@ public static class RelicStatCache
     /// <param name="id"></param>
     public static void RecordTriggerStat(string id)
     {
+        if (!RelicTracker.RelicTrackerSettings.ShouldTrack)
+        {
+            return;
+        }
+
         ModLog.Info($"[Trigger] \nRecording trigger stat for {id}\n");
         EnsureInitialized();
 
@@ -61,6 +66,11 @@ public static class RelicStatCache
     /// <param name="values"></param>
     public static void RecordCustomStat(string id, List<int> values)
     {
+        if (!RelicTracker.RelicTrackerSettings.ShouldTrack)
+        {
+            return;
+        }
+
         ModLog.Info(
             $"[Custom Stat] \nRecording custom stat for {id} with values {string.Join(", ", values)}\n"
         );
@@ -97,6 +107,11 @@ public static class RelicStatCache
 
     public static void RecordAdditionalStat(string id, List<string> values)
     {
+        if (!RelicTracker.RelicTrackerSettings.ShouldTrack)
+        {
+            return;
+        }
+
         ModLog.Info(
             $"[Custom Stat] \nRecording additional data for {id} with values {string.Join(", ", values)}\n"
         );

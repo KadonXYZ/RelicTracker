@@ -15,3 +15,4 @@ RelicTracker/RelicTracker.zip
 .vscode/
 update_loc.py
 update_missing_loc.py
+lib/

@@ -61,7 +61,9 @@
     <PropertyGroup>
         <!-- Diasble architecture mismatch warning; mods are ideally built for all platforms (MSIL)
              while your local StS2 version will be for your specific platform. -->
-        <NoWarn>$(NoWarn);MSB3270</NoWarn> 
+        <NoWarn>$(NoWarn);MSB3270</NoWarn>
+        <BaseLibDllPath Condition="Exists('$(ModsPath)BaseLib/BaseLib.dll')">$(ModsPath)BaseLib/BaseLib.dll</BaseLibDllPath>
+        <BaseLibDllPath Condition="'$(BaseLibDllPath)' == '' and Exists('$(MSBuildProjectDirectory)\lib\BaseLib.dll')">$(MSBuildProjectDirectory)\lib\BaseLib.dll</BaseLibDllPath>
     </PropertyGroup>
 
     <ItemGroup Condition="Exists('$(Sts2DataDir)')" >
@@ -73,6 +75,13 @@
             <HintPath>$(Sts2DataDir)/sts2.dll</HintPath>
             <Private>false</Private>
             <Publicize>False</Publicize> <!--Allows private/protected field references but may cause errors.-->
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(BaseLibDllPath)' != '' and Exists('$(BaseLibDllPath)')">
+        <Reference Include="BaseLib">
+            <HintPath>$(BaseLibDllPath)</HintPath>
+            <Private>false</Private>
         </Reference>
     </ItemGroup>
 
@@ -96,6 +105,7 @@
     <ItemGroup>
         <None Include=".gitignore" />
         <None Include="RelicTracker.json" />
+        <None Include="mod_image.png" />
         <None Include="project.godot"/>
         <None Include="RelicTracker/**" />
     </ItemGroup>
@@ -120,6 +130,9 @@
         <Error
                 Text=" Godot not found at path '$(GodotPath)'"
                 Condition="'$(GodotPath)' == '' or !Exists('$(GodotPath)')" />
+        <Error
+                Text=" BaseLib.dll not found. Install BaseLib in '$(ModsPath)BaseLib/' or place BaseLib.dll in '$(MSBuildProjectDirectory)\lib\' to compile RelicTracker config support."
+                Condition="'$(BaseLibDllPath)' == '' or !Exists('$(BaseLibDllPath)')" />
     </Target>
 
     <Target Name="CopyToModsFolderOnBuild" AfterTargets="PostBuildEvent">
@@ -127,6 +140,7 @@
         
         <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/" />
         <Copy SourceFiles="RelicTracker.json" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/" />
+        <Copy SourceFiles="mod_image.png" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/" Condition="Exists('mod_image.png')" />
         
         <!-- ADD THESE LINES to copy the Localization folder -->
         <ItemGroup>

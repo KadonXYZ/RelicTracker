@@ -8,10 +8,25 @@ Fork of [rmac-silva/RelicTracker](https://github.com/rmac-silva/RelicTracker) (o
 
 1. Download the latest `RelicTracker_*.zip` from [Releases](https://github.com/KadonXYZ/RelicTracker/releases).
 2. Extract it into your game's `mods` folder (create the folder if it does not exist):
-   - Windows: `Steam/steamapps/common/Slay the Spire 2/mods/`
+  - Windows: `Steam/steamapps/common/Slay the Spire 2/mods/`
 3. Launch the game and enable **RelicTracker** in the Mods menu.
 
+### Optional: Better Mod Menu config
+
+[Better Mod Menu](https://github.com/Hellfrosted/BetterModMenu) can open RelicTracker’s config from its **Config** button if [BaseLib](https://github.com/Alchyr/BaseLib-StS2) is also installed. RelicTracker still runs without BaseLib; the Config button stays unavailable until BaseLib is present.
+
+From that page you can:
+
+- Enable or disable RelicTracker without unloading the DLL
+- Show or hide stats on relic tooltips
+- Show or hide the “No data yet” line
+- Keep recording stats even when tooltips are hidden
+
+
+
 ## Build it yourself
+
+
 
 ### Requirements
 
@@ -21,14 +36,18 @@ Fork of [rmac-silva/RelicTracker](https://github.com/rmac-silva/RelicTracker) (o
 
 > Use Godot **4.5.1** specifically. Newer Godot versions can break mod packaging for this game.
 
+
+
 ### 1. Configure paths
 
 Open `RelicTracker.csproj` and set these for your machine:
 
-| Setting | What to set |
-| --- | --- |
-| `GodotPath` | Full path to your Godot 4.5.1 Mono executable |
+
+| Setting            | What to set                                                                                                       |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| `GodotPath`        | Full path to your Godot 4.5.1 Mono executable                                                                     |
 | `SteamLibraryPath` | Your Steam library that contains `Slay the Spire 2` (only needed if the game is not in the default Steam library) |
+
 
 Windows example:
 
@@ -38,6 +57,8 @@ Windows example:
 ```
 
 The project auto-detects the default Steam library when possible. It needs the game's `data_sts2_*` folder so it can reference `sts2.dll` and `0Harmony.dll`.
+
+Building also needs `BaseLib.dll` (compile-time only; it is not a required runtime dependency). Place it at `mods/BaseLib/BaseLib.dll`, or copy `BaseLib.dll` into a `lib/` folder in this repo.
 
 ### 2. Build
 
@@ -51,6 +72,7 @@ On success, the build copies these into `Slay the Spire 2/mods/RelicTracker/`:
 
 - `RelicTracker.dll`
 - `RelicTracker.json`
+- `mod_image.png`
 - `Localization/`
 
 Close the game before building if it is running, otherwise Windows may lock `RelicTracker.dll` and the copy step will fail.
@@ -63,3 +85,4 @@ Start Slay the Spire 2, enable the mod, and hover a relic during a run to see tr
 
 - Original mod: gilbio
 - Upstream repo: [rmac-silva/RelicTracker](https://github.com/rmac-silva/RelicTracker)
+
