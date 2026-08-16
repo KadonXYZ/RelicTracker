@@ -6,38 +6,24 @@ using Godot;
 public class RelicStatData
 {
     public int UsageCount { get; set; }
-    public List<int> CustomValues { get; set; } = new List<int>();
-    public List<string> AdditionalData { get; set; } = new List<string>();
+    public List<int> CustomValues { get; set; } = new();
+    public List<string> AdditionalData { get; set; } = new();
 }
 
 public static class RelicStatCache
 {
-    private static int _currentRunId = 0; // You can increment this at the start of each run to keep separate files
+    private static int _currentRunId;
     private static readonly string SavePath = Path.Combine(OS.GetUserDataDir(), "RelicTracker");
-    private static readonly string RunHistoryPath = Path.Combine(
-        OS.GetUserDataDir(),
-        "RelicTracker",
-        "RunHistory"
-    );
-    private static Dictionary<string, RelicStatData> _cache;
+    private static readonly string RunHistoryPath = Path.Combine(SavePath, "RunHistory");
+    private static Dictionary<string, RelicStatData> _cache = new();
     private static readonly object _lock = new();
-    private static int _ignoreNextCreation = 0;
+    private static int _ignoreNextCreation;
 
-    // Ensures we don't crash even if someone forgets to call Initialize()
     private static void EnsureInitialized()
     {
-        if (_cache != null)
-            return;
-        else
-        {
-            _cache = new Dictionary<string, RelicStatData>();
-        }
+        _cache ??= new Dictionary<string, RelicStatData>();
     }
 
-    /// <summary>
-    /// Increments the trigger count for a given relic
-    /// </summary>
-    /// <param name="id"></param>
     public static void RecordTriggerStat(string id)
     {
         if (!RelicTracker.RelicTrackerSettings.ShouldTrack)
@@ -45,25 +31,13 @@ public static class RelicStatCache
             return;
         }
 
-        ModLog.Info($"[Trigger] \nRecording trigger stat for {id}\n");
         EnsureInitialized();
-
         lock (_lock)
         {
-            if (!_cache.TryGetValue(id, out var data))
-            {
-                data = new RelicStatData();
-                _cache[id] = data;
-            }
-            data.UsageCount++;
+            GetOrCreate(id).UsageCount++;
         }
     }
 
-    /// <summary>
-    /// Records custom stat values directly
-    /// </summary>
-    /// <param name="id"></param>
-    /// <param name="values"></param>
     public static void RecordCustomStat(string id, List<int> values)
     {
         if (!RelicTracker.RelicTrackerSettings.ShouldTrack)
@@ -71,35 +45,25 @@ public static class RelicStatCache
             return;
         }
 
-        ModLog.Info(
-            $"[Custom Stat] \nRecording custom stat for {id} with values {string.Join(", ", values)}\n"
-        );
         EnsureInitialized();
-
         lock (_lock)
         {
-            if (!_cache.TryGetValue(id, out var data))
-            {
-                data = new RelicStatData();
-                _cache[id] = data;
-            }
-
-            if (data.CustomValues == null || data.CustomValues.Count == 0)
+            RelicStatData data = GetOrCreate(id);
+            if (data.CustomValues.Count == 0)
             {
                 data.CustomValues = new List<int>(values);
+                return;
             }
-            else
+
+            for (int i = 0; i < values.Count; i++)
             {
-                for (int i = 0; i < values.Count; i++)
+                if (i < data.CustomValues.Count)
                 {
-                    if (i < data.CustomValues.Count)
-                    {
-                        data.CustomValues[i] += values[i];
-                    }
-                    else
-                    {
-                        data.CustomValues.Add(values[i]);
-                    }
+                    data.CustomValues[i] += values[i];
+                }
+                else
+                {
+                    data.CustomValues.Add(values[i]);
                 }
             }
         }
@@ -112,35 +76,25 @@ public static class RelicStatCache
             return;
         }
 
-        ModLog.Info(
-            $"[Custom Stat] \nRecording additional data for {id} with values {string.Join(", ", values)}\n"
-        );
         EnsureInitialized();
-
         lock (_lock)
         {
-            if (!_cache.TryGetValue(id, out var data))
-            {
-                data = new RelicStatData();
-                _cache[id] = data;
-            }
-
-            if (data.AdditionalData == null || data.AdditionalData.Count == 0)
+            RelicStatData data = GetOrCreate(id);
+            if (data.AdditionalData.Count == 0)
             {
                 data.AdditionalData = new List<string>(values);
+                return;
             }
-            else
+
+            for (int i = 0; i < values.Count; i++)
             {
-                for (int i = 0; i < values.Count; i++)
+                if (i < data.AdditionalData.Count)
                 {
-                    if (i < data.CustomValues.Count)
-                    {
-                        data.AdditionalData[i] += values[i];
-                    }
-                    else
-                    {
-                        data.AdditionalData.Add(values[i]);
-                    }
+                    data.AdditionalData[i] += values[i];
+                }
+                else
+                {
+                    data.AdditionalData.Add(values[i]);
                 }
             }
         }
@@ -160,16 +114,16 @@ public static class RelicStatCache
         EnsureInitialized();
         lock (_lock)
         {
-            return _cache.TryGetValue(id, out var data) ? data.UsageCount : 0;
+            return _cache.TryGetValue(id, out RelicStatData? data) ? data.UsageCount : 0;
         }
     }
 
-    public static List<int> GetCustomValues(string id)
+    public static List<int>? GetCustomValues(string id)
     {
         EnsureInitialized();
         lock (_lock)
         {
-            return _cache.TryGetValue(id, out var data) ? data.CustomValues : null;
+            return _cache.TryGetValue(id, out RelicStatData? data) ? data.CustomValues : null;
         }
     }
 
@@ -178,25 +132,16 @@ public static class RelicStatCache
         EnsureInitialized();
         lock (_lock)
         {
-            return _cache.TryGetValue(id, out var data)
-                ? (data.AdditionalData.Count > 0 ? data.AdditionalData : null)
+            return _cache.TryGetValue(id, out RelicStatData? data) && data.AdditionalData.Count > 0
+                ? data.AdditionalData
                 : null;
         }
     }
 
-    public static int SetRunId(int newRunId)
-    {
-        _currentRunId = newRunId;
-        return _currentRunId;
-    }
-
     public static void InitializeForNewRun()
     {
-        ModLog.Info($"Initializing cache for new run. Current run id: {_currentRunId}\n");
         WipeOldCache();
-
         _currentRunId++;
-
         _cache = new Dictionary<string, RelicStatData>();
     }
 
@@ -209,149 +154,60 @@ public static class RelicStatCache
         }
     }
 
-    #region - Saving & Loading
+    public static void LoadCacheFromSingleplayerSave() =>
+        LoadCacheFromFile("singleplayer_save.json");
 
-    public static void LoadCacheFromSingleplayerSave()
-    {
-        try
-        {
-            string filePath = Path.Combine(SavePath, $"singleplayer_save.json");
-            if (File.Exists(filePath))
-            {
-                string json = File.ReadAllText(filePath);
-                _cache =
-                    JsonSerializer.Deserialize<Dictionary<string, RelicStatData>>(json)
-                    ?? new Dictionary<string, RelicStatData>();
-            }
-            else
-            {
-                ModLog.Error(
-                    $"Singleplayer save file not found at {filePath}. Starting with an empty cache.",
-                    new FileNotFoundException("Save file not found")
-                );
-                _cache = new Dictionary<string, RelicStatData>();
-            }
-        }
-        catch (System.Exception)
-        {
-            ModLog.Error(
-                $"Error loading singleplayer save file. Starting with an empty cache.",
-                new System.Exception("Error loading save file")
-            );
-            _cache = new Dictionary<string, RelicStatData>();
-        }
-    }
-
-    public static void LoadCacheFromMultiplayerSave()
-    {
-        try
-        {
-            string filePath = Path.Combine(SavePath, $"multiplayer_save.json");
-            if (File.Exists(filePath))
-            {
-                string json = File.ReadAllText(filePath);
-                _cache =
-                    JsonSerializer.Deserialize<Dictionary<string, RelicStatData>>(json)
-                    ?? new Dictionary<string, RelicStatData>();
-            }
-            else
-            {
-                ModLog.Error(
-                    $"Multiplayer save file not found at {filePath}. Starting with an empty cache.",
-                    new FileNotFoundException("Save file not found")
-                );
-                _cache = new Dictionary<string, RelicStatData>();
-            }
-        }
-        catch (System.Exception)
-        {
-            ModLog.Error(
-                $"Error loading multiplayer save file. Starting with an empty cache.",
-                new System.Exception("Error loading save file")
-            );
-            _cache = new Dictionary<string, RelicStatData>();
-        }
-    }
+    public static void LoadCacheFromMultiplayerSave() =>
+        LoadCacheFromFile("multiplayer_save.json");
 
     public static void SaveCache(bool multiplayerSave)
     {
         string fileName = multiplayerSave ? "multiplayer_save.json" : "singleplayer_save.json";
         Directory.CreateDirectory(SavePath);
-        string json = JsonSerializer.Serialize(_cache);
-        File.WriteAllText(Path.Combine(SavePath, fileName), json);
+        File.WriteAllText(Path.Combine(SavePath, fileName), JsonSerializer.Serialize(_cache));
     }
 
     public static void SaveRunHistory(long runStartTime)
     {
-        string fileName = $"{runStartTime}.json";
         Directory.CreateDirectory(RunHistoryPath);
-        string json = JsonSerializer.Serialize(_cache);
-        File.WriteAllText(Path.Combine(RunHistoryPath, fileName), json);
+        File.WriteAllText(
+            Path.Combine(RunHistoryPath, $"{runStartTime}.json"),
+            JsonSerializer.Serialize(_cache)
+        );
     }
 
     public static void LoadRunHistory(string fileName)
     {
-        try
-        {
-            var runID = fileName.Replace(".run", ".json");
-            string filePath = Path.Combine(RunHistoryPath, runID);
-
-            _ignoreNextCreation = 2; //Ignore next two cache initializations which happen when loading run history.
-
-            if (File.Exists(filePath))
-            {
-                string json = File.ReadAllText(filePath);
-                _cache =
-                    JsonSerializer.Deserialize<Dictionary<string, RelicStatData>>(json)
-                    ?? new Dictionary<string, RelicStatData>();
-            }
-            else
-            {
-                ModLog.Error(
-                    $"Run history file not found at {filePath}. Starting with an empty cache.",
-                    new FileNotFoundException("Run history file not found")
-                );
-                _cache = new Dictionary<string, RelicStatData>();
-            }
-        }
-        catch (System.Exception)
-        {
-            ModLog.Error(
-                $"Error loading run history file. Starting with an empty cache.",
-                new System.Exception("Error loading run history file")
-            );
-            _cache = new Dictionary<string, RelicStatData>();
-        }
+        _ignoreNextCreation = 2; // Ignore the next two cache initializations when loading run history.
+        LoadCacheFromFile(Path.Combine("RunHistory", fileName.Replace(".run", ".json")));
     }
 
-    /// <summary>
-    /// Checks the filenames which are in Epoch time format, and deletes those older than a month.
-    /// </summary>
     public static void CleanupOldHistory()
     {
         try
         {
             if (!Directory.Exists(RunHistoryPath))
+            {
                 return;
+            }
 
-            var files = Directory.GetFiles(RunHistoryPath);
             long currentTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             long oneMonthInSeconds = 30L * 24 * 60 * 60;
 
-            foreach (var file in files)
+            foreach (string file in Directory.GetFiles(RunHistoryPath))
             {
-                var fileName = Path.GetFileNameWithoutExtension(file);
-                if (long.TryParse(fileName, out long fileTime))
+                if (!long.TryParse(Path.GetFileNameWithoutExtension(file), out long fileTime))
                 {
-                    if (currentTime - fileTime > oneMonthInSeconds)
-                    {
-                        File.Delete(file);
-                        ModLog.Info($"Deleted old run history file: {file}");
-                    }
+                    continue;
+                }
+
+                if (currentTime - fileTime > oneMonthInSeconds)
+                {
+                    File.Delete(file);
                 }
             }
         }
-        catch (System.Exception e)
+        catch (Exception e)
         {
             ModLog.Error("Error during cleanup of old run history files.", e);
         }
@@ -359,13 +215,47 @@ public static class RelicStatCache
 
     public static bool ShouldIgnoreNextCreation()
     {
-        if (_ignoreNextCreation > 0)
+        if (_ignoreNextCreation <= 0)
         {
-            _ignoreNextCreation--;
-            return true;
+            return false;
         }
-        return false;
+
+        _ignoreNextCreation--;
+        return true;
     }
 
-    #endregion
+    private static RelicStatData GetOrCreate(string id)
+    {
+        if (!_cache.TryGetValue(id, out RelicStatData? data))
+        {
+            data = new RelicStatData();
+            _cache[id] = data;
+        }
+
+        return data;
+    }
+
+    private static void LoadCacheFromFile(string relativePath)
+    {
+        string filePath = Path.Combine(SavePath, relativePath);
+
+        try
+        {
+            if (!File.Exists(filePath))
+            {
+                _cache = new Dictionary<string, RelicStatData>();
+                return;
+            }
+
+            string json = File.ReadAllText(filePath);
+            _cache =
+                JsonSerializer.Deserialize<Dictionary<string, RelicStatData>>(json)
+                ?? new Dictionary<string, RelicStatData>();
+        }
+        catch (Exception e)
+        {
+            ModLog.Error($"Error loading cache from {filePath}. Starting with an empty cache.", e);
+            _cache = new Dictionary<string, RelicStatData>();
+        }
+    }
 }

@@ -1,31 +1,26 @@
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.Entities.Players;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Rooms;
 
 [HarmonyPatch(typeof(BlackBlood), nameof(BlackBlood.AfterCombatVictory))]
 public static class BlackBloodPatch
 {
-    static void Prefix(BloodVial __instance, CombatRoom _)
+    static void Prefix(BlackBlood __instance, CombatRoom _)
     {
-        if (LocalContext.IsMe(__instance.Owner) && !__instance.Owner.Creature.IsDead)
+        if (!LocalContext.IsMe(__instance.Owner) || __instance.Owner.Creature.IsDead)
         {
-            Creature creature = __instance.Owner.Creature;
-            int healthMissing = creature.MaxHp - creature.CurrentHp; //I have 100 max hp, I'm at 80, then I'm missing 20
-            //If the health I'm missing is below the heal amount, then I'm only healing for healthMising
-
-            RelicStatCache.RecordCustomStat(
-                __instance.Id.Entry,
-                new List<int>
-                {
-                    healthMissing < __instance.DynamicVars.Heal.IntValue
-                        ? healthMissing
-                        : __instance.DynamicVars.Heal.IntValue,
-                }
-            );
+            return;
         }
+
+        Creature creature = __instance.Owner.Creature;
+        int healthMissing = creature.MaxHp - creature.CurrentHp;
+        int heal = __instance.DynamicVars.Heal.IntValue;
+
+        RelicStatCache.RecordCustomStat(
+            __instance.Id.Entry,
+            new List<int> { Math.Min(healthMissing, heal) }
+        );
     }
 }

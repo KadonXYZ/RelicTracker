@@ -1,15 +1,15 @@
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.Entities.Players;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models.Relics;
+using MegaCrit.Sts2.Core.Rooms;
 
-[HarmonyPatch(typeof(BloodVial), nameof(BloodVial.AfterPlayerTurnStartLate))]
-public static class BloodVialPatch
+[HarmonyPatch(typeof(BurningBlood), nameof(BurningBlood.AfterCombatVictory))]
+public static class BurningBloodPatch
 {
-    static void Prefix(BloodVial __instance, PlayerChoiceContext choiceContext, Player player)
+    static void Prefix(BurningBlood __instance, CombatRoom _)
     {
-        if (player != __instance.Owner || player.Creature.CombatState.RoundNumber > 1)
+        if (!LocalContext.IsMe(__instance.Owner) || __instance.Owner.Creature.IsDead)
         {
             return;
         }

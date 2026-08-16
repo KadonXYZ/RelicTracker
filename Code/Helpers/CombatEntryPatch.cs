@@ -1,5 +1,4 @@
 using HarmonyLib;
-using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 
@@ -14,25 +13,21 @@ public static class CombatStartPatch
 
 public static class CombatStartManager
 {
-    public static int _currentCombatId = 0;
+    public static int _currentCombatId;
 
     public static void NotifyCombatStarted()
     {
-        // Every time a room is entered, we generate a new ID
         _currentCombatId++;
     }
 
-    /// <summary>
-    /// Checks if the provided ID matches the current combat.
-    /// Used by patches to detect if they need to reset their local variables.
-    /// </summary>
-    public static bool IsNewCombat(ref int localCombatId)
+    public static bool IsNewCombat(ref int lastSeenCombatId)
     {
-        if (localCombatId != _currentCombatId)
+        if (lastSeenCombatId == _currentCombatId)
         {
-            localCombatId = _currentCombatId;
-            return true;
+            return false;
         }
-        return false;
+
+        lastSeenCombatId = _currentCombatId;
+        return true;
     }
 }

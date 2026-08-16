@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>RelicTracker.BaseLib</AssemblyName>
+        <RootNamespace>RelicTracker</RootNamespace>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <OutputPath>$(MSBuildThisFileDirectory)bin\$(Configuration)\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="RelicTrackerConfig.cs" />
+        <Reference Include="BaseLib">
+            <HintPath>$(BaseLibDllPath)</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <Target Name="CheckBridgeInputs" BeforeTargets="ResolveAssemblyReferences">
+        <Error
+                Text="BaseLibDllPath was not passed to RelicTracker.BaseLib.csproj."
+                Condition="'$(BaseLibDllPath)' == '' or !Exists('$(BaseLibDllPath)')" />
+    </Target>
+</Project>

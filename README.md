@@ -13,7 +13,7 @@ Fork of [rmac-silva/RelicTracker](https://github.com/rmac-silva/RelicTracker) (o
 
 ### Optional: Better Mod Menu config
 
-[Better Mod Menu](https://github.com/Hellfrosted/BetterModMenu) can open RelicTracker’s config from its **Config** button if [BaseLib](https://github.com/Alchyr/BaseLib-StS2) is also installed. RelicTracker still runs without BaseLib; the Config button stays unavailable until BaseLib is present.
+[Better Mod Menu](https://github.com/Hellfrosted/BetterModMenu) can open RelicTracker’s config from its **Config** button if [BaseLib](https://github.com/Alchyr/BaseLib-StS2) is also installed (Steam Workshop or a manual copy in `mods/BaseLib`). RelicTracker still runs without BaseLib; the Config button stays unavailable until BaseLib is present.
 
 From that page you can:
 
@@ -22,21 +22,15 @@ From that page you can:
 - Show or hide the “No data yet” line
 - Keep recording stats even when tooltips are hidden
 
-
-
 ## Build it yourself
-
-
 
 ### Requirements
 
 - [Slay the Spire 2](https://store.steampowered.com/app/2868840/Slay_the_Spire_2/) installed via Steam
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [Godot 4.5.1 Mono](https://godotengine.org/download/archive/4.5.1-stable/) (Windows: `Godot_v4.5.1-stable_mono_win64`)
+- [Godot 4.5.1 Mono](https://godotengine.org/download/archive/4.5.1-stable/) (optional; only needed for `.pck` export via `dotnet publish`)
 
-> Use Godot **4.5.1** specifically. Newer Godot versions can break mod packaging for this game.
-
-
+> If you export a `.pck`, use Godot **4.5.1** specifically. Newer Godot versions can break mod packaging for this game. RelicTracker ships as DLL-only (`has_pck: false`), so a normal `dotnet build` does not require Godot.
 
 ### 1. Configure paths
 
@@ -45,8 +39,8 @@ Open `RelicTracker.csproj` and set these for your machine:
 
 | Setting            | What to set                                                                                                       |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| `GodotPath`        | Full path to your Godot 4.5.1 Mono executable                                                                     |
-| `SteamLibraryPath` | Your Steam library that contains `Slay the Spire 2` (only needed if the game is not in the default Steam library) |
+| `GodotPath`        | Full path to Godot 4.5.1 Mono (only if you need Publish/`.pck`)                                                    |
+| `SteamLibraryPath` | Your `steamapps` folder that contains `common/Slay the Spire 2` (only if not in the default Steam library)         |
 
 
 Windows example:
@@ -58,7 +52,13 @@ Windows example:
 
 The project auto-detects the default Steam library when possible. It needs the game's `data_sts2_*` folder so it can reference `sts2.dll` and `0Harmony.dll`.
 
-Building also needs `BaseLib.dll` (compile-time only; it is not a required runtime dependency). Place it at `mods/BaseLib/BaseLib.dll`, or copy `BaseLib.dll` into a `lib/` folder in this repo.
+Building also needs `BaseLib.dll` (compile-time only; it is not a required runtime dependency). RelicTracker looks for it in this order:
+
+1. `Slay the Spire 2/mods/BaseLib/BaseLib.dll` (manual install)
+2. Steam Workshop: `steamapps/workshop/content/2868840/3737335127/BaseLib/BaseLib.dll`
+3. A `lib/BaseLib.dll` copy in this repo
+
+The Workshop copy is enough; you do not need a second BaseLib in the game’s `mods` folder.
 
 ### 2. Build
 
@@ -71,8 +71,8 @@ dotnet build
 On success, the build copies these into `Slay the Spire 2/mods/RelicTracker/`:
 
 - `RelicTracker.dll`
+- `RelicTracker.BaseLib.dll` (only if BaseLib is available at compile time)
 - `RelicTracker.json`
-- `mod_image.png`
 - `Localization/`
 
 Close the game before building if it is running, otherwise Windows may lock `RelicTracker.dll` and the copy step will fail.

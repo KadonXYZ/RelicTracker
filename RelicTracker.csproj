@@ -2,9 +2,9 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>true</ImplicitUsings>
-        <Nullable>enable</Nullable> <!--Makes code analysis regarding null values stricter.-->
+        <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <DefaultItemExcludes>packages/**</DefaultItemExcludes>
+        <DefaultItemExcludes>$(DefaultItemExcludes);packages/**</DefaultItemExcludes>
         <AppOutputBase>$(MSBuildProjectDirectory)\</AppOutputBase>
         <PathMap>$(AppOutputBase)=.\</PathMap>
     </PropertyGroup>
@@ -19,19 +19,17 @@
         <IsOSX Condition="$([MSBuild]::IsOSPlatform('OSX'))">true</IsOSX>
     </PropertyGroup>
 
-    <!-- // NOTE: Megadot is version 4.5.1, and the game won't load your .pck if the Godot version used is newer. -->
+    <!-- Megadot is 4.5.1; newer Godot can break .pck loading for this game. Only needed for Publish/PCK. -->
 
-    <!-- Windows -->
+    <!-- Windows: SteamLibraryPath is the steamapps folder (same convention as Linux/macOS). -->
     <PropertyGroup Condition="'$(IsWindows)' == 'true'">
         <AutoSteamPath>$(registry:HKEY_CURRENT_USER\Software\Valve\Steam@SteamPath)\steamapps</AutoSteamPath>
         <SteamLibraryPath Condition="Exists('$(AutoSteamPath)/common/Slay the Spire 2')">$(AutoSteamPath)</SteamLibraryPath>
-
         <GodotPath>C:\Users\XYZ\Godot\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64.exe</GodotPath>
-        <!-- If on Windows and Slay the Spire 2 is not installed in your default steam library, adjust the following.-->
-        <SteamLibraryPath Condition="'$(SteamLibraryPath)' == ''">D:\SteamLibrary\steamapps\common</SteamLibraryPath>
+        <!-- If the game is not in the default Steam library, set steamapps here. -->
+        <SteamLibraryPath Condition="'$(SteamLibraryPath)' == ''">D:\SteamLibrary\steamapps</SteamLibraryPath>
 
-        <!-- The below should not need to be changed. -->
-        <Sts2Path>$(SteamLibraryPath)/Slay the Spire 2</Sts2Path>
+        <Sts2Path>$(SteamLibraryPath)/common/Slay the Spire 2</Sts2Path>
         <ModsPath>$(Sts2Path)/mods/</ModsPath>
         <Sts2DataDir>$(Sts2Path)/data_sts2_windows_x86_64</Sts2DataDir>
     </PropertyGroup>
@@ -41,7 +39,6 @@
         <SteamLibraryPath Condition="'$(SteamLibraryPath)' == ''">$(HOME)/.local/share/Steam/steamapps</SteamLibraryPath>
         <GodotPath Condition="'$(GodotPath)' == ''">$(SteamLibraryPath)/common/Godot Engine/godot.x11.opt.tools.64</GodotPath>
 
-        <!-- The below should not need to be changed. -->
         <Sts2Path>$(SteamLibraryPath)/common/Slay the Spire 2</Sts2Path>
         <ModsPath>$(Sts2Path)/mods/</ModsPath>
         <Sts2DataDir>$(Sts2Path)/data_sts2_linuxbsd_x86_64</Sts2DataDir>
@@ -52,21 +49,24 @@
         <SteamLibraryPath Condition="'$(SteamLibraryPath)' == ''">$(HOME)/Library/Application Support/Steam/steamapps</SteamLibraryPath>
         <GodotPath Condition="'$(GodotPath)' == ''">$(HOME)/Applications/Godot_mono.app/Contents/MacOS/Godot</GodotPath>
 
-        <!-- The below should not need to be changed. -->
         <Sts2Path>$(SteamLibraryPath)/common/Slay the Spire 2</Sts2Path>
         <ModsPath>$(Sts2Path)/SlayTheSpire2.app/Contents/MacOS/mods/</ModsPath>
         <Sts2DataDir>$(Sts2Path)/SlayTheSpire2.app/Contents/Resources/data_sts2_macos_x86_64</Sts2DataDir>
     </PropertyGroup>
 
     <PropertyGroup>
-        <!-- Diasble architecture mismatch warning; mods are ideally built for all platforms (MSIL)
-             while your local StS2 version will be for your specific platform. -->
+        <!-- Disable architecture mismatch warning; mods are ideally MSIL while local StS2 is platform-specific. -->
         <NoWarn>$(NoWarn);MSB3270</NoWarn>
+        <!-- Workshop BaseLib: derive steamapps from the game install (works for secondary libraries). -->
+        <SteamAppsRoot Condition="'$(Sts2Path)' != ''">$([System.IO.Path]::GetFullPath('$(Sts2Path)\..\..'))</SteamAppsRoot>
+        <WorkshopBaseLibDll>$(SteamAppsRoot)\workshop\content\2868840\3737335127\BaseLib\BaseLib.dll</WorkshopBaseLibDll>
         <BaseLibDllPath Condition="Exists('$(ModsPath)BaseLib/BaseLib.dll')">$(ModsPath)BaseLib/BaseLib.dll</BaseLibDllPath>
+        <BaseLibDllPath Condition="'$(BaseLibDllPath)' == '' and Exists('$(WorkshopBaseLibDll)')">$(WorkshopBaseLibDll)</BaseLibDllPath>
         <BaseLibDllPath Condition="'$(BaseLibDllPath)' == '' and Exists('$(MSBuildProjectDirectory)\lib\BaseLib.dll')">$(MSBuildProjectDirectory)\lib\BaseLib.dll</BaseLibDllPath>
+        <BaseLibBridgeDll>$(MSBuildProjectDirectory)\BaseLibBridge\bin\$(Configuration)\RelicTracker.BaseLib.dll</BaseLibBridgeDll>
     </PropertyGroup>
 
-    <ItemGroup Condition="Exists('$(Sts2DataDir)')" >
+    <ItemGroup Condition="Exists('$(Sts2DataDir)')">
         <Reference Include="0Harmony">
             <HintPath>$(Sts2DataDir)/0Harmony.dll</HintPath>
             <Private>false</Private>
@@ -74,44 +74,35 @@
         <Reference Include="sts2">
             <HintPath>$(Sts2DataDir)/sts2.dll</HintPath>
             <Private>false</Private>
-            <Publicize>False</Publicize> <!--Allows private/protected field references but may cause errors.-->
-        </Reference>
-    </ItemGroup>
-
-    <ItemGroup Condition="'$(BaseLibDllPath)' != '' and Exists('$(BaseLibDllPath)')">
-        <Reference Include="BaseLib">
-            <HintPath>$(BaseLibDllPath)</HintPath>
-            <Private>false</Private>
+            <Publicize>False</Publicize>
         </Reference>
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="*" />
-        <AdditionalFiles Include="RelicTracker/localization/**/*.json"/>
+        <AdditionalFiles Include="Localization/**/*.loc" />
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Remove="RelicTracker/**" />
-        <Compile Remove="materials/**" />
-        <Compile Remove="shaders/**" />
-        <Compile Remove="images/**" />
+        <Compile Remove=".godot/**" />
+        <Compile Remove="bin/**" />
+        <Compile Remove="obj/**" />
+        <Compile Remove="BaseLibBridge/**" />
         <Compile Remove="_inspect/**" />
-        <EmbeddedResource Remove="RelicTracker/**" />
-        <EmbeddedResource Remove="materials/**" />
-        <EmbeddedResource Remove="shaders/**" />
-        <EmbeddedResource Remove="images/**" />
+        <EmbeddedResource Remove=".godot/**" />
+        <EmbeddedResource Remove="bin/**" />
+        <EmbeddedResource Remove="obj/**" />
+        <EmbeddedResource Remove="BaseLibBridge/**" />
     </ItemGroup>
 
     <ItemGroup>
         <None Include=".gitignore" />
         <None Include="RelicTracker.json" />
-        <None Include="mod_image.png" />
-        <None Include="project.godot"/>
-        <None Include="RelicTracker/**" />
+        <None Include="project.godot" />
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="Localization\**\*">
+        <Content Include="Localization\**\*.loc">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
@@ -122,41 +113,50 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
-    
-    <Target Name="CheckDependencyPaths" >
+
+    <Target Name="CheckDependencyPaths">
         <Error
                 Text=" Slay the Spire 2 data not found at path '$(Sts2DataDir)'"
                 Condition="'$(Sts2DataDir)' == '' or !Exists('$(Sts2DataDir)')" />
-        <Error
-                Text=" Godot not found at path '$(GodotPath)'"
+        <Warning
+                Text=" Godot not found at '$(GodotPath)'. DLL builds still work; set GodotPath only if you need Publish/.pck export."
                 Condition="'$(GodotPath)' == '' or !Exists('$(GodotPath)')" />
-        <Error
-                Text=" BaseLib.dll not found. Install BaseLib in '$(ModsPath)BaseLib/' or place BaseLib.dll in '$(MSBuildProjectDirectory)\lib\' to compile RelicTracker config support."
+        <Warning
+                Text=" BaseLib.dll not found. RelicTracker will build without Better Mod Menu config support. Subscribe to BaseLib on the Steam Workshop, install it in '$(ModsPath)BaseLib/', or place BaseLib.dll in '$(MSBuildProjectDirectory)\lib\'."
                 Condition="'$(BaseLibDllPath)' == '' or !Exists('$(BaseLibDllPath)')" />
+        <Message
+                Text="Using BaseLib at '$(BaseLibDllPath)'"
+                Importance="high"
+                Condition="'$(BaseLibDllPath)' != '' and Exists('$(BaseLibDllPath)')" />
+    </Target>
+
+    <Target Name="BuildBaseLibBridge" AfterTargets="Build" Condition="'$(BaseLibDllPath)' != '' and Exists('$(BaseLibDllPath)')">
+        <Message Text="Building RelicTracker.BaseLib.dll for optional BaseLib config support." Importance="high" />
+        <MSBuild
+                Projects="$(MSBuildProjectDirectory)\BaseLibBridge\RelicTracker.BaseLib.csproj"
+                Targets="Restore;Build"
+                Properties="Configuration=$(Configuration);BaseLibDllPath=$(BaseLibDllPath)" />
+        <Copy SourceFiles="$(BaseLibBridgeDll)" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/" Condition="Exists('$(BaseLibBridgeDll)')" />
     </Target>
 
     <Target Name="CopyToModsFolderOnBuild" AfterTargets="PostBuildEvent">
         <Message Text="Copying .dll and manifest to mods folder." Importance="high" />
-        
         <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/" />
         <Copy SourceFiles="RelicTracker.json" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/" />
-        <Copy SourceFiles="mod_image.png" DestinationFolder="$(ModsPath)$(MSBuildProjectName)/" Condition="Exists('mod_image.png')" />
-        
-        <!-- ADD THESE LINES to copy the Localization folder -->
         <ItemGroup>
-            <LocFiles Include="Localization\**\*" />
+            <LocFiles Include="Localization\**\*.loc" />
         </ItemGroup>
         <Copy SourceFiles="@(LocFiles)" DestinationFolder="$(ModsPath)$(MSBuildProjectName)\Localization\%(RecursiveDir)" />
     </Target>
 
     <Target Name="GodotPublish" AfterTargets="Publish" Condition="'$(GodotPath)' != '' and Exists('$(GodotPath)') and '$(IsInnerGodotExport)' != 'true'">
-        <Message Text="Exporting Godot .pck to mods folder" Importance="high"/>
+        <Message Text="Exporting Godot .pck to mods folder" Importance="high" />
         <Exec Command="&quot;$(GodotPath)&quot; --headless --export-pack &quot;BasicExport&quot; &quot;$(ModsPath)$(MSBuildProjectName)/$(MSBuildProjectName).pck&quot;"
               EnvironmentVariables="IsInnerGodotExport=true;MSBUILDDISABLENODEREUSE=1"
-              ContinueOnError="WarnAndContinue"/>
+              ContinueOnError="WarnAndContinue" />
     </Target>
 
     <Target Name="GodotPublishSkipped" AfterTargets="Publish" Condition="'$(GodotPath)' == '' or !Exists('$(GodotPath)')">
-        <Message Text="Skipping Godot .pck export because GodotPath is not configured." Importance="high"/>
+        <Message Text="Skipping Godot .pck export because GodotPath is not configured." Importance="high" />
     </Target>
 </Project>

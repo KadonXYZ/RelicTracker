@@ -4,10 +4,10 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models.Relics;
 
-[HarmonyPatch(typeof(BloodVial), nameof(BloodVial.AfterPlayerTurnStartLate))]
-public static class BloodVialPatch
+[HarmonyPatch(typeof(FakeBloodVial), nameof(FakeBloodVial.AfterPlayerTurnStartLate))]
+public static class FakeBloodVialPatch
 {
-    static void Prefix(BloodVial __instance, PlayerChoiceContext choiceContext, Player player)
+    static void Prefix(FakeBloodVial __instance, PlayerChoiceContext choiceContext, Player player)
     {
         if (player != __instance.Owner || player.Creature.CombatState.RoundNumber > 1)
         {
